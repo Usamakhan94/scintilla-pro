@@ -24,7 +24,7 @@ const BestSolution = () => {
             </p>
             <div className="flex items-center gap-[0.625rem]">
               <Button className="" size="icon">
-                Request a demo{" "}
+                Request a demo
                 <span className="group-hover:-rotate-0 -rotate-45 transition-all w-9 h-9 grid place-items-center bg-white text-black rounded-full">
                   <ArrowRight />
                 </span>
