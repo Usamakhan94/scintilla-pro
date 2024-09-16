@@ -102,7 +102,7 @@ const Services = () => {
                 <TabsContent key={index} value={tabTriggers[index].value}>
                   <div className="grid grid-cols-4 gap-6">
                     {logo.map((brand, indexed) => {
-                      let logoUrl: string = brand.iconTitle
+                      const logoUrl: string = brand.iconTitle
                         .split(" ")
                         .join("-")
                         .toLowerCase();
