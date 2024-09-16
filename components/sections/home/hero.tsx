@@ -26,9 +26,9 @@ const Hero = () => {
               Transforming Ideas into Digital Realities
             </h1>
             <p className="text-muted-gray text-sm  mb-5">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              {`Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inven tore veritatis et quasi architecto
+              quae ab illo inven tore veritatis et quasi architecto`}
             </p>
             <Button className="" size="icon">
               Request a demo{" "}

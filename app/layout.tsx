@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Inter_Tight, Syne } from "next/font/google";
+import { Inter_Tight, Syne } from "next/font/google";
 import "./globals.css";
 
 const syne = Syne({ subsets: ["latin"] });

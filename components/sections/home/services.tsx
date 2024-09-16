@@ -78,9 +78,9 @@ const Services = () => {
           Our services to grow your online business
         </h2>
         <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
-          There are many variations of passages of Lorem Ipsum available, but
+          {`There are many variations of passages of Lorem Ipsum available, but
           the majorty have suffered alteration in some form by injected humour
-          or randomised words which don't look even slightly believable.
+          or randomised words which don't look even slightly believable.`}
         </p>
         <div>
           <Tabs defaultValue={tabTriggers[0].value} className=" mt-8">
