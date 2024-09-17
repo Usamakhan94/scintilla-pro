@@ -37,8 +37,8 @@ body {
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: #ff6314;
-    --primary-foreground: 0 0% 98%;
+    --primary: #21d6a2;
+    --primary-foreground: #4f60e8;
     --secondary: #0d0e13;
     --secondary-foreground: #595959;
     --muted: 0 0% 96.1%;
@@ -92,4 +92,11 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.pricing_cards ul {
+  background-color: #fff;
+}
+.pricing_cards:nth-child(even) ul {
+  background-color: var(--background);
 }

@@ -11,17 +11,26 @@ const Hero = () => {
         backgroundColor: "rgba(0, 0, 0, 0.94)",
       }}
     >
-      <div className="absolute bottom-20 right-0 -z-10 ">
+      <div className="absolute bottom-0 overflow-hidden right-0 -z-10 ">
         <Image
+          className="translate-y-11"
           src="/swiggler.svg"
           alt="Skwiggly Line"
           width={680}
           height={360}
         />
       </div>
+      <div className="absolute top-0 left-0 -z-10 ">
+        <Image
+          src="/swiggler-rotated.svg"
+          alt="Skwiggly Line"
+          width={420}
+          height={200}
+        />
+      </div>
       <div className="container">
         <div className="flex items-center justify-between">
-          <div className="max-w-[31.375rem]">
+          <div className="max-w-[34.375rem]">
             <h1 className="text-h1 text-white font-semibold leading-tight mb-4">
               Transforming Ideas into Digital Realities
             </h1>
@@ -30,7 +39,7 @@ const Hero = () => {
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inven tore veritatis et quasi architecto`}
             </p>
-            <Button className="" size="icon">
+            <Button variant="dark" className="" size="icon">
               Request a demo{" "}
               <span className="group-hover:-rotate-0 -rotate-45 transition-all w-9 h-9 grid place-items-center bg-white text-black rounded-full">
                 <ArrowRight />

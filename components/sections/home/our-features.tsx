@@ -31,7 +31,9 @@ const OurFeatures = () => {
                 >
                   <div
                     className={`w-20 h-20 grid place-items-center rounded-full ${
-                      index % 2 == 0 ? "bg-primary" : "bg-black"
+                      index % 2 == 0
+                        ? "bg-gradient-to-b to-[#21D6A2] from-[#4F60E8]"
+                        : "bg-black"
                     }`}
                   >
                     {item.icon}

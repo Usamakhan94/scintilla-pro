@@ -89,7 +89,7 @@ const Services = () => {
                 return (
                   <TabsTrigger
                     key={index}
-                    className="w-[10.875rem] py-5 bg-white rounded-full text-sm font-medium data-[state=active]:bg-primary data-[state=active]:text-white"
+                    className="w-[10.875rem] py-5 bg-white rounded-full text-sm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
                     value={tab.value}
                   >
                     {tab.label}
