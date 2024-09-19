@@ -4,6 +4,7 @@ import MarketingMethods from "@/components/sections/home/marketing-methods";
 import OurFeatures from "@/components/sections/home/our-features";
 import OurPricing from "@/components/sections/home/our-pricing";
 import Services from "@/components/sections/home/services";
+import WorkTogether from "@/components/sections/home/work-together";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <BestSolution />
       <MarketingMethods />
       <OurPricing />
+      <WorkTogether />
     </main>
   );
 }

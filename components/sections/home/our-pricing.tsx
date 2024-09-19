@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PricingContent from "./pricing-content";
-import { CheckIcon } from "@/components/ui/icons";
+import PriceCard from "@/components/ui/price-card";
+import Image from "next/image";
 const OurPricing = () => {
   const tabTriggers = [
     { label: "Logo Design", value: "logo-design" },
@@ -12,7 +13,24 @@ const OurPricing = () => {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20 relative isolate">
+      <div className="absolute top-0 left-0 -z-10 opacity-45 ">
+        <Image
+          src="/swiggler-rotated.svg"
+          alt="Skwiggly Line"
+          width={420}
+          height={200}
+        />
+      </div>
+      <div className="absolute bottom-0 right-0 -z-10 opacity-45 ">
+        <Image
+          className=" rotate-180"
+          src="/swiggler-rotated.svg"
+          alt="Skwiggly Line"
+          width={420}
+          height={200}
+        />
+      </div>
       <div className="container">
         <h5 className="text-h5 leading-none text-primary text-center font-semibold">
           Our Pricing
@@ -45,40 +63,8 @@ const OurPricing = () => {
               <TabsContent key={index} value={tab.value}>
                 <div className="grid grid-cols-3 gap-8 items-end mx-28">
                   {filteredPricing.map((priceCard, index) => {
-                    return (
-                      <div
-                        key={index}
-                        className="odd:bg-background even:bg-white pricing_cards even:shadow-2xl p-6 rounded-[0.625rem] relativegroup"
-                      >
-                        <p className="text-primary-foreground text-sm font-medium">
-                          {priceCard.packageName}
-                        </p>
-                        <h3 className="text-h3 font-inter font-semibold">
-                          ${priceCard.pricing}
-                        </h3>
-                        <p className="text-sm text-toned-gray mb-6">
-                          {priceCard.quality}
-                        </p>
-                        <ul className="rounded-[0.625rem] px-5 py-8">
-                          {priceCard.listDetails.map(
-                            (listItem: string, index: number) => (
-                              <li
-                                key={index}
-                                className="text-sm text-toned-gray flex items-center gap-1 last:mb-0 mb-3"
-                              >
-                                <span>
-                                  <CheckIcon />
-                                </span>
-                                <span>{listItem}</span>
-                              </li>
-                            )
-                          )}
-                        </ul>
-                        <button className="bg-toned-dark w-full text-body font-semibold rounded-[0.75rem] grid place-items-center text-white mt-3 min-h-[3.125rem] group-hover:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
-                          Order Now
-                        </button>
-                      </div>
-                    );
+                    if (index == 3) return;
+                    return <PriceCard key={index} {...priceCard} />;
                   })}
                 </div>
               </TabsContent>
