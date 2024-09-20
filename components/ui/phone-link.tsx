@@ -23,7 +23,7 @@ const PhoneLink = ({
       href={`tel:+${phone.replaceAll("-", "")}`}
     >
       <span
-        className={`grid place-items-center w-[3.125rem] h-[3.125rem] rounded-full border text-h6 ${
+        className={`grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 ${
           multiIcon
             ? "bg-white"
             : dark
@@ -35,14 +35,14 @@ const PhoneLink = ({
       </span>
       <div className="flex flex-col gap-2">
         <span
-          className={`text-xsm leading-none ${
+          className={`text-xsm leading-none text-nowrap ${
             lightLabel ? "text-primary-foreground" : "text-primary"
           }`}
         >
           Call us at
         </span>
         <p
-          className={`font-inter text-base font-semibold leading-none ${
+          className={`font-inter text-base text-nowrap font-semibold leading-none ${
             darkText ? "text-toned-dark" : "text-white"
           }`}
         >

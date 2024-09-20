@@ -1,4 +1,5 @@
 import BestSolution from "@/components/sections/home/best-solution";
+import ComboPackage from "@/components/sections/home/combo-package";
 import Hero from "@/components/sections/home/hero";
 import MarketingMethods from "@/components/sections/home/marketing-methods";
 import OurFeatures from "@/components/sections/home/our-features";
@@ -16,6 +17,7 @@ export default function Home() {
       <MarketingMethods />
       <OurPricing />
       <WorkTogether />
+      <ComboPackage />
     </main>
   );
 }
