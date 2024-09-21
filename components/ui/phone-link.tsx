@@ -8,6 +8,7 @@ interface LinkAtt {
   dark?: boolean;
   lightLabel?: boolean;
   multiIcon?: boolean;
+  gradient?: boolean;
 }
 
 const PhoneLink = ({
@@ -16,6 +17,7 @@ const PhoneLink = ({
   darkText,
   lightLabel,
   multiIcon,
+  gradient,
 }: LinkAtt) => {
   return (
     <Link
@@ -28,6 +30,8 @@ const PhoneLink = ({
             ? "bg-white"
             : dark
             ? "border-white text-white bg-black"
+            : gradient
+            ? "bg-gradient-to-b to-[#21D6A2] from-[#4F60E8]"
             : "text-primary"
         }`}
       >

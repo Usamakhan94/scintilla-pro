@@ -222,3 +222,28 @@ export const GrCommentIcon = () => {
     </svg>
   );
 };
+
+
+export const FilledCommentIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="22"
+      fill="none"
+      viewBox="0 0 22 22"
+    >
+      <g clipPath="url(#clip0_252_861)">
+        <path
+          fill="#fff"
+          d="M18.333 0H3.667A3.667 3.667 0 000 3.667v11a3.667 3.667 0 003.667 3.666h2.658l4.08 3.45a.917.917 0 001.184 0l4.086-3.45h2.658A3.667 3.667 0 0022 14.667v-11A3.667 3.667 0 0018.333 0zM6.417 4.583H11a.917.917 0 010 1.834H6.417a.917.917 0 110-1.834zm9.166 9.167H6.417a.917.917 0 010-1.833h9.166a.916.916 0 110 1.833zm0-3.667H6.417a.917.917 0 110-1.833h9.166a.917.917 0 010 1.833z"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_252_861">
+          <path fill="#fff" d="M0 0H22V22H0z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
