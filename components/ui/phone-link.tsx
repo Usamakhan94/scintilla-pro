@@ -9,6 +9,7 @@ interface LinkAtt {
   lightLabel?: boolean;
   multiIcon?: boolean;
   gradient?: boolean;
+  defaultLabel?: boolean;
 }
 
 const PhoneLink = ({
@@ -18,6 +19,7 @@ const PhoneLink = ({
   lightLabel,
   multiIcon,
   gradient,
+  defaultLabel,
 }: LinkAtt) => {
   return (
     <Link
@@ -29,7 +31,7 @@ const PhoneLink = ({
           multiIcon
             ? "bg-white"
             : dark
-            ? "border-white text-white bg-black"
+            ? "border-white text-white "
             : gradient
             ? "bg-gradient-to-b to-[#21D6A2] from-[#4F60E8]"
             : "text-primary"
@@ -40,7 +42,11 @@ const PhoneLink = ({
       <div className="flex flex-col gap-2">
         <span
           className={`text-xsm leading-none text-nowrap ${
-            lightLabel ? "text-primary-foreground" : "text-primary"
+            lightLabel
+              ? "text-primary-foreground"
+              : defaultLabel
+              ? "text-white"
+              : "text-primary"
           }`}
         >
           Call us at

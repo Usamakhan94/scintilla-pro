@@ -1,5 +1,6 @@
 import BestSolution from "@/components/sections/home/best-solution";
 import ComboPackage from "@/components/sections/home/combo-package";
+import ContactUs from "@/components/sections/home/contact-us";
 import FortuneCompanies from "@/components/sections/home/fortune-companies";
 import Hero from "@/components/sections/home/hero";
 import MarketingMethods from "@/components/sections/home/marketing-methods";
@@ -24,6 +25,7 @@ export default function Home() {
       <FortuneCompanies />
       <WorkWithUs />
       <Testimonials />
+      <ContactUs />
     </main>
   );
 }

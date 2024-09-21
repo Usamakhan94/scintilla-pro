@@ -10,7 +10,7 @@ const WorkTogether = () => {
     >
       <div className="absolute bottom-0 left-0">
         <Image
-          src="/work-together-main.webp"
+          src="/contact-image.webp"
           alt="Section Image"
           width={307}
           height={133}

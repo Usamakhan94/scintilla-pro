@@ -105,3 +105,13 @@ body {
 .pricing_card:before {
   clip-path: polygon(100% 100%, 0 0, 0 100%);
 }
+/* swiper-pagination-bullet-active */
+.pagination_color .swiper-pagination .swiper-pagination-bullet {
+  background: var(--dark-text);
+  opacity: 35%;
+}
+.pagination_color
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
