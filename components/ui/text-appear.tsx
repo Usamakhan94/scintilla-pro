@@ -1,11 +1,11 @@
 "use client";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 const Transition = ({
   children,
   className,
 }: {
-  children: any;
+  children: ReactNode;
   className?: string;
 }) => {
   const ref = useRef(null);
