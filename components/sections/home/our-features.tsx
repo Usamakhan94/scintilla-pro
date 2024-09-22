@@ -16,7 +16,7 @@ const OurFeatures = () => {
   return (
     <section>
       <div className="container">
-        <div className="bg-white shadow-xl flex items-center rounded-[1.125rem] -translate-y-1/2 p-16">
+        <div className="bg-white shadow-xl flex items-center rounded-[1.125rem] -translate-y-1/2 xl:p-16 p-8">
           <div className="max-w-[21.25rem] border-r">
             <h2 className="text-h2 font-semibold leading-tight">
               Our Unique Features
@@ -27,7 +27,7 @@ const OurFeatures = () => {
               return (
                 <div
                   key={index}
-                  className="flex flex-col items-center gap-2 px-14"
+                  className="flex flex-col items-center gap-2 2xl:px-14 px-6"
                 >
                   <div
                     className={`w-20 h-20 grid place-items-center rounded-full ${
