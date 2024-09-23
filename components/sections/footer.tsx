@@ -40,10 +40,10 @@ const Footer = () => {
   const pathName = usePathname().split("/")[1];
   return (
     <footer
-      className="relative lg:h-[550px] sm:h-[600px] h-[750px] bg-black overflow-hidden"
+      className="relative lg:h-[550px] sm:h-[600px] h-[700px] bg-black overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 lg:h-[550px] sm:h-[600px] h-[750px] w-full lg:top-[calc(100vh-550px)] sm:top-[calc(100vh-600px)] top-[calc(100vh-750px)]">
+      <div className="fixed bottom-0 lg:h-[550px] sm:h-[600px] h-[700px] w-full lg:top-[calc(100vh-550px)] sm:top-[calc(100vh-600px)] top-[calc(100vh-700px)]">
         <div className="absolute top-0 left-0 -z-10 ">
           <Image
             src="/swiggler-rotated.svg"
@@ -100,7 +100,7 @@ atae vitae dictasunt explicabo. `}
                 {navLinks[0].map((navItem) => (
                   <li key={navItem.label}>
                     <Link
-                      className={`relative text-sm text-white  ${
+                      className={`relative sm:text-sm text-xsm text-white  ${
                         pathName === navItem.href ? "text-white" : ""
                       }`}
                       href={`/${navItem.href}`}
@@ -119,7 +119,7 @@ atae vitae dictasunt explicabo. `}
                 {navLinks[1].map((navItem) => (
                   <li key={navItem.label}>
                     <Link
-                      className={`relative text-sm text-white  ${
+                      className={`relative sm:text-sm text-xsm text-white  ${
                         pathName === navItem.href ? "text-white" : ""
                       }`}
                       href={`/${navItem.href}`}
@@ -130,15 +130,15 @@ atae vitae dictasunt explicabo. `}
                 ))}
               </ul>
             </div>
-            <div className="flex flex-col justify-start sm:items-center items-start">
+            <div className="flex flex-col justify-start sm:items-center items-start sm:col-span-1 col-span-2">
               <h6 className="text-body text-white font-semibold leading-none relative sm:pb-5 pb-2 sm:mb-5 mb-2 before:absolute before:bottom-0 before:left-0 before:w-[3.125rem] before:h-[1px] before:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
                 Quick Links
               </h6>
-              <ul className="flex flex-col xsm:gap-4 gap-2 sm:pl-8">
+              <ul className="flex sm:flex-col xsm:gap-4 gap-2 sm:pl-8">
                 {navLinks[2].map((navItem) => (
                   <li key={navItem.label}>
                     <Link
-                      className={`relative text-sm text-white  ${
+                      className={`relative sm:text-sm text-xsm text-white  ${
                         pathName === navItem.href ? "text-white" : ""
                       }`}
                       href={`/${navItem.href}`}
