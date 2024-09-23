@@ -40,10 +40,10 @@ const Footer = () => {
   const pathName = usePathname().split("/")[1];
   return (
     <footer
-      className="relative h-[550px] bg-black overflow-hidden"
+      className="relative lg:h-[550px] sm:h-[600px] h-[750px] bg-black overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 h-[550px] w-full top-[calc(100vh-550px)]">
+      <div className="fixed bottom-0 lg:h-[550px] sm:h-[600px] h-[750px] w-full lg:top-[calc(100vh-550px)] sm:top-[calc(100vh-600px)] top-[calc(100vh-750px)]">
         <div className="absolute top-0 left-0 -z-10 ">
           <Image
             src="/swiggler-rotated.svg"
@@ -61,19 +61,19 @@ const Footer = () => {
             height={200}
           />
         </div>
-        <div className="container flex flex-col justify-between h-full py-6 pt-32">
-          <div className="grid grid-cols-4">
-            <div>
+        <div className="container flex flex-col justify-between h-full sm:py-6 py-3 lg:pt-32">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:mx-0 mx-2">
+            <div className="lg:col-span-1 sm:col-span-3 col-span-2 lg:mb-0 mb-4">
               <div className="flex items-end justify-start mb-5">
                 <Image src="/logo.png" alt="Logo" width="260" height="60" />
               </div>
-              <p className="text-white text-sm mb-5">
+              <p className="text-white sm:text-sm text-xsm sm:mb-5 mb-1">
                 {`Sed ut pers piciatis unde omnis iste natus error sit volu
 do lore mque laudantium, totam rem aperiam, eaquei
 atae vitae dictasunt explicabo. `}
               </p>
               <div className="flex items-center gap-2 flex-wrap">
-                <p className="text-white font-semibold text-h6 ">
+                <p className="text-white font-semibold sm:text-h6 text-base ">
                   Follow us on{" "}
                 </p>
                 <ul className="flex items-center gap-[0.625rem]">
@@ -82,7 +82,7 @@ atae vitae dictasunt explicabo. `}
                       <li key={index}>
                         <Link
                           href={item.href}
-                          className="w-12 h-12 p-2 rounded-full grid place-items-center bg-gradient-to-b from-[#4F60E8] to-[#21D6A2] text-white"
+                          className="sm:w-12 w-8 sm:h-12 h-8 p-2 rounded-full grid place-items-center bg-gradient-to-b from-[#4F60E8] to-[#21D6A2] text-white"
                         >
                           {item.icon}
                         </Link>
@@ -92,11 +92,11 @@ atae vitae dictasunt explicabo. `}
                 </ul>
               </div>
             </div>
-            <div className="flex flex-col justify-start items-center">
-              <h6 className="text-body text-white font-semibold leading-none relative pb-5 mb-5 before:absolute before:bottom-0 before:left-0 before:w-[3.125rem] before:h-[1px] before:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
+            <div className="flex flex-col justify-start sm:items-center items-start">
+              <h6 className="text-body text-white font-semibold leading-none relative sm:pb-5 pb-2 sm:mb-5 mb-2 before:absolute before:bottom-0 before:left-0 before:w-[3.125rem] before:h-[1px] before:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
                 Quick Links
               </h6>
-              <ul className="flex flex-col xsm:gap-4 gap-2 pl-4">
+              <ul className="flex flex-col xsm:gap-4 gap-2 sm:pl-4">
                 {navLinks[0].map((navItem) => (
                   <li key={navItem.label}>
                     <Link
@@ -111,11 +111,11 @@ atae vitae dictasunt explicabo. `}
                 ))}
               </ul>
             </div>
-            <div className="flex flex-col justify-start items-center">
-              <h6 className="text-body text-white font-semibold leading-none relative pb-5 mb-5 before:absolute before:bottom-0 before:left-0 before:w-[3.125rem] before:h-[1px] before:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
+            <div className="flex flex-col justify-start sm:items-center items-start">
+              <h6 className="text-body text-white font-semibold leading-none relative sm:pb-5 pb-2 sm:mb-5 mb-2 before:absolute before:bottom-0 before:left-0 before:w-[3.125rem] before:h-[1px] before:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
                 Quick Links
               </h6>
-              <ul className="flex flex-col xsm:gap-4 gap-2 pl-8">
+              <ul className="flex flex-col xsm:gap-4 gap-2 sm:pl-8">
                 {navLinks[1].map((navItem) => (
                   <li key={navItem.label}>
                     <Link
@@ -130,11 +130,11 @@ atae vitae dictasunt explicabo. `}
                 ))}
               </ul>
             </div>
-            <div className="flex flex-col justify-start items-center">
-              <h6 className="text-body text-white font-semibold leading-none relative pb-5 mb-5 before:absolute before:bottom-0 before:left-0 before:w-[3.125rem] before:h-[1px] before:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
+            <div className="flex flex-col justify-start sm:items-center items-start">
+              <h6 className="text-body text-white font-semibold leading-none relative sm:pb-5 pb-2 sm:mb-5 mb-2 before:absolute before:bottom-0 before:left-0 before:w-[3.125rem] before:h-[1px] before:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
                 Quick Links
               </h6>
-              <ul className="flex flex-col xsm:gap-4 gap-2 pl-8">
+              <ul className="flex flex-col xsm:gap-4 gap-2 sm:pl-8">
                 {navLinks[2].map((navItem) => (
                   <li key={navItem.label}>
                     <Link
@@ -150,11 +150,11 @@ atae vitae dictasunt explicabo. `}
               </ul>
             </div>
           </div>
-          <div className=" border border-white/30 rounded-[0.8125rem] flex items-center justify-between py-6 px-10 gap-3">
+          <div className=" border border-white/30 rounded-[0.8125rem] sm:mx-0 mx-2 flex sm:flex-row flex-col items-center justify-between lg:py-6 py-2 md:px-10 px-5 gap-3">
             <p className="xsm:text-sm text-[0.75rem] text-white/80 text-center">
               Copyright© 2024. Aviorsol.com all right reserved
             </p>
-            <div className="flex items-center gap-14">
+            <div className="flex sm:flex-row flex-col sm:items-center items-start sm:gap-14">
               <div>
                 <h6 className="text-toned-gray text-sm font-medium">Email</h6>
                 <Link
