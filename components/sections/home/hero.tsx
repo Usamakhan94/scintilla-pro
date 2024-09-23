@@ -6,7 +6,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section
-      className="bg-no-repeat bg-cover lg:pt-[12.5rem] sm:pt-[6.5rem] pt-[4rem] pb-[16.875rem] isolate relative lg:px-0 px-2"
+      className="bg-no-repeat bg-cover lg:pt-[12.5rem] sm:pt-[6.5rem] pt-[4rem] sm:pb-[16.875rem] pb-[8.875rem] isolate relative lg:px-0 px-2"
       style={{
         backgroundImage: "url(/main_bnr-img.webp)",
         backgroundColor: "rgba(0, 0, 0, 0.94)",
@@ -14,7 +14,7 @@ const Hero = () => {
     >
       <div className="absolute bottom-0 overflow-hidden right-0 -z-10 ">
         <Image
-          className="translate-y-11"
+          className="xl:translate-y-11 translate-y-20 lg:translate-x-0 translate-x-8"
           src="/swiggler.svg"
           alt="Skwiggly Line"
           width={680}
@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="container">
         <div className="flex items-center justify-between lg:flex-row flex-col lg:gap-0 gap-8">
           <div className="lg:max-w-[34.375rem]">
-            <h1 className="md:text-h1 sm:text-h2 text-3xl text-white font-semibold leading-tight mb-4">
+            <h1 className="md:text-h1 sm:text-h2 text-h4 text-white font-semibold leading-tight mb-4">
               <Transition>Transforming</Transition>{" "}
               <Transition>Ideas into Digital</Transition>{" "}
               <Transition> Realities</Transition>

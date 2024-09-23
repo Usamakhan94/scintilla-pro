@@ -1,4 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Transition from "@/components/ui/text-appear";
 
 const Services = () => {
   const tabTriggers = [
@@ -72,24 +73,26 @@ const Services = () => {
     ],
   ];
   return (
-    <section className="pb-40">
+    <section className="xl:pb-40 lg:pb-32 pb-20">
       <div className="container">
-        <h2 className="text-h2 text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
-          Our services to grow your online business
+        <h2 className="sm:text-h2 text-3xl text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
+          <Transition>Our services to grow your online business</Transition>
         </h2>
-        <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
-          {`There are many variations of passages of Lorem Ipsum available, but
+        <Transition>
+          <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
+            {`There are many variations of passages of Lorem Ipsum available, but
           the majorty have suffered alteration in some form by injected humour
           or randomised words which don't look even slightly believable.`}
-        </p>
+          </p>
+        </Transition>
         <div>
           <Tabs defaultValue={tabTriggers[0].value} className=" mt-8">
-            <TabsList className="gap-[0.625rem] w-full mb-9">
+            <TabsList className="gap-[0.625rem] w-full lg:mb-9 mb-6 flex-wrap">
               {tabTriggers.map((tab, index) => {
                 return (
                   <TabsTrigger
                     key={index}
-                    className="w-[10.875rem] py-5 bg-white rounded-full text-sm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
+                    className="xl:w-[10.875rem] sm:px-6 px-4 xl:py-5 sm:py-4 py-2 bg-white rounded-full sm:text-sm text-xsm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
                     value={tab.value}
                   >
                     {tab.label}
@@ -100,7 +103,7 @@ const Services = () => {
             {tabContent.map((logo, index) => {
               return (
                 <TabsContent key={index} value={tabTriggers[index].value}>
-                  <div className="grid grid-cols-4 gap-6">
+                  <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 sm:mx-0 mx-2">
                     {logo.map((brand, indexed) => {
                       const logoUrl: string = brand.iconTitle
                         .split(" ")
@@ -109,14 +112,14 @@ const Services = () => {
                       return (
                         <div
                           key={indexed}
-                          className="bg-white w-full min-h-72 rounded-[0.625rem] flex flex-col justify-center items-center gap-8 cursor-pointer shadow-none hover:shadow-xl transition-all"
+                          className="bg-white w-full lg:min-h-72 lg:py-0 py-9 rounded-[0.625rem] flex flex-col justify-center items-center md:gap-8 gap-4 cursor-pointer shadow-none hover:shadow-xl transition-all"
                         >
                           <img
                             src={`/logos/${logoUrl}.webp`}
                             alt={brand.iconTitle}
                           />
-                          <h5 className="text-h5 font-medium text-toned-dark">
-                            {brand.iconTitle}
+                          <h5 className="lg:text-h5 text-h6 font-medium text-toned-dark">
+                            <Transition>{brand.iconTitle}</Transition>
                           </h5>
                         </div>
                       );

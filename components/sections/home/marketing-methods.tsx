@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import PhoneLink from "@/components/ui/phone-link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Transition from "@/components/ui/text-appear";
 import { ArrowRight } from "lucide-react";
 
 const MarketingMethods = () => {
@@ -170,23 +171,26 @@ const MarketingMethods = () => {
   ];
 
   return (
-    <section className="pt-[9.75rem] pb-[8.125rem]">
+    <section className="sm:pt-[9.75rem] pt-[3.75rem] sm:pb-[8.125rem] pb-[2.5rem]">
       <div className="container">
-        <h2 className="text-h2 text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
-          Together With Focused Marketing Methods
+        <h2 className="sm:text-h2 text-[24px] text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
+          <Transition>Together With Focused </Transition>
+          <Transition>Marketing Methods</Transition>
         </h2>
-        <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
-          {`There are many variations of passages of Lorem Ipsum available, but
+        <Transition>
+          <p className="text-sm text-toned-gray max-w-[800px] text-center sm:mx-auto mx-2">
+            {`There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form by injected humour
           or randomised words which don't look even slightly believable.`}
-        </p>
+          </p>
+        </Transition>
         <div>
           <Tabs defaultValue={tabTriggers[0].value} className="mt-8">
-            <TabsList className="gap-[0.625rem] w-full mb-9">
+            <TabsList className="gap-[0.625rem] w-full lg:mb-9 sm:mb-6 mb-3 flex-wrap">
               {tabTriggers.map((tab, index) => (
                 <TabsTrigger
                   key={index}
-                  className="w-[10.875rem] py-5 bg-white rounded-full text-sm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
+                  className="xl:w-[10.875rem] sm:px-6 px-4 xl:py-5 sm:py-4 py-2 bg-white rounded-full sm:text-sm text-xsm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
                   value={tab.value}
                 >
                   {tab.label}
@@ -200,12 +204,12 @@ const MarketingMethods = () => {
                     defaultValue={logosTypes[0].iconTrigger}
                     className="flex flex-col"
                   >
-                    <TabsList className="gap-[0.625rem] w-fit mx-auto mb-9 p-0 rounded-none border-b">
+                    <TabsList className="flex-wrap w-fit mx-auto gap-y-1 mb-9 p-0 rounded-none border-b">
                       {logosTypes.map((logoTitle, indexdb) => (
                         <TabsTrigger
                           key={indexdb}
                           value={logoTitle.iconTrigger}
-                          className="rounded-none !shadow-none border-b-2 border-transparent data-[state=active]:border-[#4F60E8] !-mb-[1px]"
+                          className="rounded-none px-4 !w-fit !shadow-none border-b data-[state=active]:border-[#4F60E8] data-[state=active]:border-b-2 !-mb-[1px]"
                         >
                           {logoTitle.iconTitle}
                         </TabsTrigger>
@@ -216,7 +220,7 @@ const MarketingMethods = () => {
                         key={indexLogo}
                         value={logosTypes[indexLogo].iconTrigger}
                       >
-                        <div className="grid grid-cols-4 gap-6">
+                        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 lg:gap-6 gap-4 sm:mx-0 mx-2">
                           {logosTypesContent[indexLogo].map(
                             (logoUrl, indexing) => (
                               <div
@@ -224,7 +228,7 @@ const MarketingMethods = () => {
                                 style={{
                                   backgroundImage: `url(${logoUrl.iconHref})`,
                                 }}
-                                className="w-full min-h-[24.375rem] bg-white bg-cover bg-center rounded-[0.625rem]"
+                                className="w-full xl:min-h-[24.375rem] py-20 bg-white bg-cover bg-center rounded-[0.625rem]"
                               ></div>
                             )
                           )}
@@ -233,7 +237,7 @@ const MarketingMethods = () => {
                     ))}
                   </Tabs>
                 ) : (
-                  <div className="grid grid-cols-4 gap-6">
+                  <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 sm:mx-0 mx-2">
                     {logos.map((brand, indexed) => {
                       const logoUrl = brand.iconTitle
                         .split(" ")
@@ -256,14 +260,17 @@ const MarketingMethods = () => {
             ))}
           </Tabs>
         </div>
-        <div className="flex items-center justify-center w-fit mx-auto bg-background px-8 gap-[0.625rem] mt-16 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-full before:w-full before:-z-10 before:bg-border before:h-[2px] after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-full after:w-full after:-z-10 after:bg-border after:h-[2px]">
-          <Button className="" size="icon">
-            Get in touch
-            <span className="group-hover:-rotate-0 -rotate-45 transition-all w-9 h-9 grid place-items-center bg-white text-black rounded-full">
-              <ArrowRight />
-            </span>
-          </Button>
-          <PhoneLink phone="548-584-687" dark darkText lightLabel multiIcon />
+        <div className="flex items-center justify-center mt-16 relative isolate">
+          <div className="absolute top-1/2 -translate-y-1/2 left-0 w-full -z-10 bg-border h-[2px] pointer-events-none" />
+          <div className="flex items-center justify-center flex-wrap w-fit bg-background gap-[0.625rem] px-8">
+            <Button className="" size="icon">
+              Get in touch
+              <span className="group-hover:-rotate-0 -rotate-45 transition-all sm:w-9 w-7 sm:h-9 h-7 text-sm grid place-items-center bg-white text-black rounded-full">
+                <ArrowRight />
+              </span>
+            </Button>
+            <PhoneLink phone="548-584-687" dark darkText lightLabel multiIcon />
+          </div>
         </div>
       </div>
     </section>

@@ -71,7 +71,7 @@ const ContactForm = () => {
       </div>
       <Button className="w-fit min-w-[10.625rem] justify-between" size="icon">
         Send Now
-        <span className="group-hover:-rotate-0 -rotate-45 transition-all w-9 h-9 grid place-items-center bg-white text-black rounded-full">
+        <span className="group-hover:-rotate-0 -rotate-45 transition-all sm:w-9 w-7 sm:h-9 h-7 text-sm grid place-items-center bg-white text-black rounded-full">
           <ArrowRight />
         </span>
       </Button>

@@ -36,7 +36,7 @@ const Transition = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.25 }}
+        transition={{ duration: 0.45 }}
         ref={ref}
         className={className}
       >

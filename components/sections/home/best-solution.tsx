@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import PhoneLink from "@/components/ui/phone-link";
+import Transition from "@/components/ui/text-appear";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
@@ -18,13 +19,16 @@ const BestSolution = () => {
         />
       </div>
       <div className="container">
-        <div className="grid grid-cols-2">
+        <div className="grid xl:grid-cols-2 sm:px-0 px-2">
           <div className="max-w-[35.625rem]">
-            <h2 className="text-h2 text-white font-semibold leading-tight mb-6">
-              A future-oriented agency that provides the best solutions
+            <h2 className="xl:text-h2 sm:text-h3 text-[1.75rem] text-white font-semibold leading-tight mb-6">
+              <Transition>A future-oriented </Transition>
+              <Transition>agency that provides </Transition>
+              <Transition>the best solutions</Transition>
             </h2>
-            <p className="text-white text-sm mb-8">
-              {`
+            <Transition>
+              <p className="text-white text-sm mb-8">
+                {`
               There are many variations of passages of Lorem Ipsum available,
               but the majorty have suffer ed alteration in some form, by
               injected humour, or randomised words which don't look even
@@ -32,20 +36,21 @@ const BestSolution = () => {
               Ipsum, you need to be sure the re isn't anything embarrassing
               hidden in them iddle of text. All the Lorem Ipsum generators on
               the Internet tend to repeat prede fined chunks as necessary, `}
-            </p>
-            <div className="flex items-center gap-[0.625rem]">
+              </p>
+            </Transition>
+            <div className="flex items-center gap-[0.625rem] flex-wrap">
               <Button className="" size="icon">
                 Get in touch
-                <span className="group-hover:-rotate-0 -rotate-45 transition-all w-9 h-9 grid place-items-center bg-white text-black rounded-full">
+                <span className="group-hover:-rotate-0 -rotate-45 transition-all sm:w-9 w-7 sm:h-9 h-7 text-sm grid place-items-center bg-white text-black rounded-full">
                   <ArrowRight />
                 </span>
               </Button>
               <PhoneLink phone="548-584-687" dark />
             </div>
           </div>
-          <div>
+          <div className="xl:static xl:translate-y-0 absolute top-1/2 lg:-translate-y-1/2 right-0 xl:max-w-full max-w-[50%] lg:block hidden ">
             <Image
-              className=" -translate-x-[155px] translate-y-[88px] scale-[1.4]"
+              className=" 2xl:-translate-x-[155px] xl:-translate-x-[100px] xl:translate-y-[88px] 2xl:scale-[1.4] xl:scale-[1.2]"
               src="/future-main-img.webp"
               alt="Section Image"
               width={936}

@@ -1,12 +1,13 @@
 import { FilledCommentIcon } from "@/components/ui/icons";
 import PhoneLink from "@/components/ui/phone-link";
+import Transition from "@/components/ui/text-appear";
 import Image from "next/image";
 
 const WorkWithUs = () => {
   return (
-    <section className="">
+    <section className="pb-12">
       <div className="container">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid lg:grid-cols-2 items-center">
           <div className="relative isolate">
             <Image
               src="/work-with-us.webp"
@@ -15,28 +16,30 @@ const WorkWithUs = () => {
               width={620}
               unoptimized
             />
-            <div className="bg-white rounded-[1.125rem] w-fit absolute -bottom-5 right-[20%]">
+            <div className="bg-white rounded-[1.125rem] w-fit absolute -bottom-5 sm:right-[20%] right-5">
               <Image
                 src="/heading-bg.webp"
                 alt=""
                 width={200}
                 height={170}
-                className="shadow-2xl rounded-[1.125rem] overflow-hidden"
+                className="shadow-2xl rounded-[1.125rem] overflow-hidden sm:max-w-[12.5rem] max-w-[8.75rem]"
                 unoptimized
               />
             </div>
           </div>
-          <div>
-            <h2 className="text-h1 font-semibold text-secondary max-w-[26.25rem] leading-tight">
-              Ready to work with us
+          <div className="lg:mt-0 mt-5 mx-2 sm:mx-0">
+            <h2 className="sm:text-h1 text-h3 font-semibold text-secondary max-w-[26.25rem] leading-tight">
+              <Transition>Ready to work with us</Transition>
             </h2>
-            <p className="text-body text-toned-gray">
-              {`Sed ut pers piciatis unde omnis iste natus error sit volu ptatem
+            <Transition>
+              <p className="text-body text-toned-gray">
+                {`Sed ut pers piciatis unde omnis iste natus error sit volu ptatem
               accu santium do lore mque lau dantium, totam rem aperiam, eaque
               ipsaquae ab illo inve ntore veritatis et quasi archi tecto be atae
               vitae dictasunt explicabo.`}
-            </p>
-            <div className="py-8 flex gap-5 border-y border-[#00000052] w-fit pr-5 mt-7 relative before:absolute before:w-2 before:h-2 before:border-r before:border-[#00000052] before:border-t before:-top-[5px] before:right-0 before:rotate-45 after:absolute after:w-2 after:h-2 after:border-l after:border-[#00000052] after:border-b after:-bottom-[5px] after:left-0 after:rotate-45">
+              </p>
+            </Transition>
+            <div className="py-8 flex flex-wrap gap-5 border-y border-[#00000052] w-fit pr-5 mt-7 relative before:absolute before:w-2 before:h-2 before:border-r before:border-[#00000052] before:border-t before:-top-[5px] before:right-0 before:rotate-45 after:absolute after:w-2 after:h-2 after:border-l after:border-[#00000052] after:border-b after:-bottom-[5px] after:left-0 after:rotate-45">
               <PhoneLink phone="548-584-687" gradient darkText lightLabel />
               <div className="flex items-center gap-2">
                 <span className="grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 bg-gradient-to-b to-[#21D6A2] from-[#4F60E8]">

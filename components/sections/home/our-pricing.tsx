@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PricingContent from "./pricing-content";
 import PriceCard from "@/components/ui/price-card";
 import Image from "next/image";
+import Transition from "@/components/ui/text-appear";
 const OurPricing = () => {
   const tabTriggers = [
     { label: "Logo Design", value: "logo-design" },
@@ -13,7 +14,7 @@ const OurPricing = () => {
   ];
 
   return (
-    <section className="bg-white py-20 relative isolate">
+    <section className="bg-white sm:py-20 py-10 relative isolate">
       <div className="absolute top-0 left-0 -z-10 opacity-45 ">
         <Image
           src="/swiggler-rotated.svg"
@@ -33,22 +34,24 @@ const OurPricing = () => {
       </div>
       <div className="container">
         <h5 className="text-h5 leading-none text-primary text-center font-semibold">
-          Our Pricing
+          <Transition>Our Pricing</Transition>
         </h5>
-        <h2 className="text-h2 text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
-          That Suits Everyone!
+        <h2 className="sm:text-h2 text-3xl text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
+          <Transition>That Suits Everyone!</Transition>
         </h2>
-        <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
-          {`There are many variations of passages of Lorem Ipsum available, but
+        <Transition>
+          <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
+            {`There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form by injected humour
           or randomised words which don't look even slightly believable.`}
-        </p>
+          </p>
+        </Transition>
         <Tabs defaultValue={tabTriggers[0].value} className="mt-8">
-          <TabsList className="gap-[0.625rem] w-full mb-9">
+          <TabsList className="gap-[0.625rem] w-full lg:mb-9 mb-6 flex-wrap">
             {tabTriggers.map((tab, index) => (
               <TabsTrigger
                 key={index}
-                className="w-[10.875rem] py-5 bg-background rounded-full text-sm font-medium data-[state=active]:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8] data-[state=active]:text-white"
+                className="xl:w-[10.875rem] sm:px-6 px-4 xl:py-5 sm:py-4 py-2 bg-background rounded-full sm:text-sm text-xsm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
                 value={tab.value}
               >
                 {tab.label}
@@ -61,7 +64,7 @@ const OurPricing = () => {
             });
             return (
               <TabsContent key={index} value={tab.value}>
-                <div className="grid grid-cols-3 gap-8 items-end mx-28">
+                <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-y-6 lg:gap-8 gap-3 items-end 2xl:mx-28 sm:mx-0 mx-2">
                   {filteredPricing.map((priceCard, index) => {
                     if (index == 3) return;
                     return <PriceCard key={index} {...priceCard} />;
