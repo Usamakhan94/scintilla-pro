@@ -199,7 +199,7 @@ const MarketingMethods = () => {
             </TabsList>
             {tabContent.map((logos, indexC) => (
               <TabsContent key={indexC} value={tabTriggers[indexC].value}>
-                {tabTriggers[indexC].label === "Logo Design" ? (
+                {/* {tabTriggers[indexC].label === "Logo Design" ? (
                   <Tabs
                     defaultValue={logosTypes[0].iconTrigger}
                     className="flex flex-col"
@@ -255,7 +255,25 @@ const MarketingMethods = () => {
                       );
                     })}
                   </div>
-                )}
+                )} */}
+                <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 sm:mx-0 mx-2">
+                  {logos.map((brand, indexed) => {
+                    const logoUrl = brand.iconTitle
+                      .split(" ")
+                      .join("-")
+                      .toLowerCase();
+                    return (
+                      <div
+                        key={indexed}
+                        style={{
+                          backgroundImage: `url(/logos/${logoUrl}.webp)`,
+                          backgroundSize: "140px",
+                        }}
+                        className="w-full min-h-[24.375rem] bg-white bg-contain bg-no-repeat bg-center rounded-[0.625rem]"
+                      ></div>
+                    );
+                  })}
+                </div>
               </TabsContent>
             ))}
           </Tabs>
