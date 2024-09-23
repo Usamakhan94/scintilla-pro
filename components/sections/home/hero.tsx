@@ -6,7 +6,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section
-      className="bg-no-repeat bg-cover lg:pt-[12.5rem] sm:pt-[6.5rem] pt-[4rem] sm:pb-[16.875rem] pb-[8.875rem] isolate relative lg:px-0 px-2"
+      className="bg-no-repeat bg-cover lg:pt-[12.5rem] pt-[6.5rem] sm:pb-[16.875rem] pb-[8.875rem] isolate relative lg:px-0 px-2"
       style={{
         backgroundImage: "url(/main_bnr-img.webp)",
         backgroundColor: "rgba(0, 0, 0, 0.94)",
@@ -44,7 +44,7 @@ const Hero = () => {
               quae ab illo inven tore veritatis et quasi architecto`}
               </p>
             </Transition>
-            <Button variant="dark" className="" size="icon">
+            <Button className="" size="icon">
               Request a demo{" "}
               <span className="group-hover:-rotate-0 -rotate-45 transition-all sm:w-9 w-7 sm:h-9 h-7 text-sm grid place-items-center bg-white text-black rounded-full">
                 <ArrowRight />

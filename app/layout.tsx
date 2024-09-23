@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter_Tight, Syne } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/sections/footer";
+import NavBar from "@/components/sections/navbar";
 
 const syne = Syne({ subsets: ["latin"] });
 const inter = Inter_Tight({ subsets: ["latin"], variable: "--inter" });
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${syne.className} ${inter.variable} antialiased`}>
+        <NavBar />
         {children}
         <Footer />
       </body>

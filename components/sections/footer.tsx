@@ -65,7 +65,12 @@ const Footer = () => {
           <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:mx-0 mx-2">
             <div className="lg:col-span-1 sm:col-span-3 col-span-2 lg:mb-0 mb-4">
               <div className="flex items-end justify-start mb-5">
-                <Image src="/logo.png" alt="Logo" width="260" height="60" />
+                <Image
+                  src="/footer-logo.svg"
+                  alt="Logo"
+                  width="260"
+                  height="60"
+                />
               </div>
               <p className="text-white sm:text-sm text-xsm sm:mb-5 mb-1">
                 {`Sed ut pers piciatis unde omnis iste natus error sit volu
