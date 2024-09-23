@@ -25,9 +25,16 @@ const NavBar = () => {
         <div className="container">
           <div className="hidden lg:grid grid-cols-3 ">
             <div className="relative">
-              <Image src="/logo.svg" alt="Logo" width="260" height="60" />
-              <div className="bg-white rounded-bl-[30px] rounded-br-[30px] absolute -top-2 left-0">
-                <Image src="/top-logo.svg" alt="Logo" width="260" height="60" />
+              <Image src="/logo.svg" alt="Logo" width="220" height="60" />
+              <div className="bg-white shadow-2xl xl:w-[60%]  flex items-center justify-center py-3 px-4 rounded-bl-[30px] rounded-br-[30px] absolute -top-2 left-0">
+                <Image
+                  className="max-w-[200px]"
+                  unoptimized
+                  src="/top-logo.svg"
+                  alt="Logo"
+                  width="260"
+                  height="60"
+                />
               </div>
             </div>
             <ul className="flex justify-center items-center gap-8">
