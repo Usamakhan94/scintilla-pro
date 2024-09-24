@@ -13,9 +13,9 @@ const FuelingSuccess = () => {
   return (
     <section>
       <div className="container">
-        <div className="flex gap-7">
-          <div className="grid grid-cols-2 gap-7 flex-1">
-            <div className="rounded-[1.0625rem] group overflow-hidden">
+        <div className="flex lg:flex-row flex-col xl:gap-7 gap-4 mx-2 sm:mx-0">
+          <div className="grid sm:grid-cols-2 xl:gap-7 gap-4 flex-1">
+            <div className="rounded-[1.0625rem] group overflow-hidden sm:block hidden">
               <Image
                 src="/business-people.png"
                 alt=""
@@ -24,8 +24,15 @@ const FuelingSuccess = () => {
                 className="scale-150 group-hover:scale-125 w-full transition-all"
               />
             </div>
-            <div className="bg-black rounded-[1.0625rem] py-8 px-6 flex flex-col items-start justify-between">
-              <div className="flex items-center gap-[0.625rem] pb-7 border-b border-white/20 w-full">
+            <div className="bg-black rounded-[1.0625rem] py-8 px-6 flex flex-col items-start justify-between sm:gap-0 gap-4 relative isolate overflow-hidden">
+              <Image
+                src="/business-people.png"
+                alt=""
+                width={306}
+                height={433}
+                className="absolute w-full h-full -z-10 top-0 left-0 block sm:hidden object-cover opacity-25"
+              />
+              <div className="flex items-center gap-[0.625rem] sm:pb-7 pb-4 border-b border-white/20 w-full">
                 <div className="flex items-center justify-center text-h4 w-16 h-16 rounded-full bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] text-white">
                   <MdOutlineCheckCircleOutline />
                 </div>
@@ -38,7 +45,7 @@ const FuelingSuccess = () => {
                   </h5>
                 </div>
               </div>
-              <div className="flex items-center gap-[0.625rem] pb-7 border-b border-white/20 w-full">
+              <div className="flex items-center gap-[0.625rem] sm:pb-7 pb-4 border-b border-white/20 w-full">
                 <div className="flex items-center justify-center text-h4 w-16 h-16 rounded-full bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] text-white">
                   <FaRegSmile />
                 </div>
@@ -65,7 +72,7 @@ const FuelingSuccess = () => {
             </div>
           </div>
           <div className="flex-1">
-            <h2 className="sm:text-h2 text-h4 font-semibold text-secondary leading-tight">
+            <h2 className="sm:text-h2 text-[1.75rem] font-semibold text-secondary leading-tight">
               <Transition>Fueling Your</Transition>
               <Transition>Potential for Lasting</Transition>
               <Transition>Success</Transition>

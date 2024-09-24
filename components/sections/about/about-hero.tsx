@@ -41,7 +41,7 @@ const AboutHero = () => {
               </span>
             </Button>
           </div>
-          <div className="relative isolate">
+          <div className="relative isolate xl:scale-100 xl:translate-x-0 xl:translate-y-0 lg:scale-125 lg:-translate-x-20  lg:translate-y-32">
             <Image
               src="/about_hero-img.png"
               alt="Hero Image"

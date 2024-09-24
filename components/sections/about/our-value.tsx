@@ -3,10 +3,10 @@ import { TbEyeCog, TbTargetArrow } from "react-icons/tb";
 
 const OurValue = () => {
   return (
-    <section className="py-24">
+    <section className="md:py-24 py-12">
       <div className="container">
-        <div className="grid grid-cols-2 gap-8">
-          <div className="bg-white rounded-[1.875rem] py-[4.375rem] px-[3.125rem] flex flex-col justify-center items-center gap-[0.625rem]">
+        <div className="grid sm:grid-cols-2 xl:gap-8 gap-4 sm:mx-0 mx-2">
+          <div className="bg-white rounded-[1.875rem] lg:py-[4.375rem] py-[2.375rem] lg:px-[3.125rem] px-[1.5rem] flex flex-col justify-center items-center gap-[0.625rem]">
             <div className="flex items-center justify-center text-h4 w-16 h-16 rounded-full bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] text-white">
               <TbTargetArrow />
             </div>
@@ -20,7 +20,7 @@ slightly believable. If you are going to use a pa ssage of Lorem Ipsum, you nee
 re isn't anything embarrassing hidden.`}</p>
             </Transition>
           </div>
-          <div className="bg-white rounded-[1.875rem] py-[4.375rem] px-[3.125rem] flex flex-col justify-center items-center gap-[0.625rem]">
+          <div className="bg-white rounded-[1.875rem] lg:py-[4.375rem] py-[2.375rem] lg:px-[3.125rem] px-[1.5rem] flex flex-col justify-center items-center gap-[0.625rem]">
             <div className="flex items-center justify-center text-h4 w-16 h-16 rounded-full bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] text-white">
               <TbEyeCog />
             </div>
