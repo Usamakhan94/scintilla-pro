@@ -7,6 +7,7 @@ interface PricingDetails {
   pricing: string;
   quality?: string;
   listDetails: string[];
+  whiteCard?: boolean;
 }
 
 const PriceCard = ({
@@ -14,9 +15,14 @@ const PriceCard = ({
   pricing,
   quality,
   listDetails,
+  whiteCard,
 }: PricingDetails) => {
   return (
-    <div className="bg-background  hover:bg-white transition-all duration-300 hover:shadow-2xl 2xl:p-6 p-4 pt-6 rounded-[0.625rem] relative group">
+    <div
+      className={` transition-all duration-300 hover:shadow-2xl 2xl:p-6 p-4 pt-6 rounded-[0.625rem] relative group ${
+        whiteCard ? "bg-white" : "bg-background  hover:bg-white"
+      }`}
+    >
       <div className="relative flex items-start justify-between isolate">
         <div>
           <Transition>
@@ -36,7 +42,11 @@ const PriceCard = ({
       <Transition>
         <p className="text-sm text-toned-gray mb-6">{quality}</p>
       </Transition>
-      <ul className="rounded-[0.625rem] 2xl:px-5 px-3 py-8 bg-white group-hover:bg-background transition-all duration-300">
+      <ul
+        className={`rounded-[0.625rem] 2xl:px-5 px-3 py-8 transition-all duration-300 ${
+          whiteCard ? "bg-background" : "bg-white group-hover:bg-background"
+        }`}
+      >
         {listDetails.map((listItem: string, index: number) => (
           <li
             key={index}

@@ -3,7 +3,7 @@ import PricingContent from "../../../app/pricing-content";
 import PriceCard from "@/components/ui/price-card";
 import Image from "next/image";
 import Transition from "@/components/ui/text-appear";
-const OurPricing = () => {
+const AllPricing = () => {
   const tabTriggers = [
     { label: "Logo Design", value: "logo-design" },
     { label: "Website Design", value: "website-design" },
@@ -14,18 +14,9 @@ const OurPricing = () => {
   ];
 
   return (
-    <section className="bg-white sm:py-20 py-10 relative isolate">
+    <section className="bg-background sm:py-20 py-10 sm:pb-28 relative isolate">
       <div className="absolute top-0 left-0 -z-10 opacity-45 ">
         <Image
-          src="/swiggler-rotated.svg"
-          alt="Skwiggly Line"
-          width={420}
-          height={200}
-        />
-      </div>
-      <div className="absolute bottom-0 right-0 -z-10 opacity-45 ">
-        <Image
-          className=" rotate-180"
           src="/swiggler-rotated.svg"
           alt="Skwiggly Line"
           width={420}
@@ -51,7 +42,7 @@ const OurPricing = () => {
             {tabTriggers.map((tab, index) => (
               <TabsTrigger
                 key={index}
-                className="xl:w-[10.875rem] sm:px-6 px-4 xl:py-5 sm:py-4 py-2 bg-background rounded-full sm:text-sm text-xsm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
+                className="xl:w-[10.875rem] sm:px-6 px-4 xl:py-5 sm:py-4 py-2 bg-white rounded-full sm:text-sm text-xsm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
                 value={tab.value}
               >
                 {tab.label}
@@ -65,9 +56,8 @@ const OurPricing = () => {
             return (
               <TabsContent key={index} value={tab.value}>
                 <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-y-6 lg:gap-8 gap-3 items-end 2xl:mx-28 sm:mx-0 mx-2">
-                  {filteredPricing.map((priceCard, indexed) => {
-                    if (indexed >= 3) return;
-                    return <PriceCard key={indexed} {...priceCard} />;
+                  {filteredPricing.map((priceCard, index) => {
+                    return <PriceCard whiteCard key={index} {...priceCard} />;
                   })}
                 </div>
               </TabsContent>
@@ -79,4 +69,4 @@ const OurPricing = () => {
   );
 };
 
-export default OurPricing;
+export default AllPricing;
