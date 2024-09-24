@@ -15,8 +15,8 @@ import { RiMenu4Line } from "react-icons/ri";
 const NavBar = () => {
   const Navlinks = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
     { label: "About us", href: "/about-us" },
+    { label: "Services", href: "/services" },
     { label: "Packages", href: "/packages" },
   ];
   return (
