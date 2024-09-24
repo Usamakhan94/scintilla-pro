@@ -10,6 +10,7 @@ interface LinkAtt {
   multiIcon?: boolean;
   gradient?: boolean;
   defaultLabel?: boolean;
+  transparent?: boolean;
 }
 
 const PhoneLink = ({
@@ -20,6 +21,7 @@ const PhoneLink = ({
   multiIcon,
   gradient,
   defaultLabel,
+  transparent,
 }: LinkAtt) => {
   return (
     <Link
@@ -29,7 +31,9 @@ const PhoneLink = ({
       <span
         className={`grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 ${
           multiIcon
-            ? "bg-white"
+            ? transparent
+              ? ""
+              : "bg-white"
             : dark
             ? "border-white text-white "
             : gradient

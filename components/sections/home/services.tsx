@@ -115,7 +115,7 @@ const Services = () => {
                           className="bg-white w-full lg:min-h-72 lg:py-0 py-9 rounded-[0.625rem] flex flex-col justify-center items-center md:gap-8 gap-4 cursor-pointer shadow-none hover:shadow-xl transition-all"
                         >
                           <img
-                            src={`/logos/${logoUrl}.webp`}
+                            src={`/logos/${logoUrl}.png`}
                             alt={brand.iconTitle}
                           />
                           <h5 className="lg:text-h5 text-h6 font-medium text-toned-dark">

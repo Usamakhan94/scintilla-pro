@@ -1,15 +1,15 @@
 import BestSolution from "@/components/sections/home/best-solution";
 import ComboPackage from "@/components/sections/home/combo-package";
-import ContactUs from "@/components/sections/home/contact-us";
-import FortuneCompanies from "@/components/sections/home/fortune-companies";
+import ContactUs from "@/components/sections/contact-us";
+import FortuneCompanies from "@/components/sections/fortune-companies";
 import Hero from "@/components/sections/home/hero";
 import MarketingMethods from "@/components/sections/home/marketing-methods";
 import OurFeatures from "@/components/sections/home/our-features";
 import OurPricing from "@/components/sections/home/our-pricing";
 import Services from "@/components/sections/home/services";
-import Testimonials from "@/components/sections/home/testimonials";
+import Testimonials from "@/components/sections/testimonials";
 import WorkTogether from "@/components/sections/home/work-together";
-import WorkWithUs from "@/components/sections/home/work-with-us";
+import WorkWithUs from "@/components/sections/work-with-us";
 
 export default function Home() {
   return (

@@ -1,0 +1,117 @@
+import { Button } from "@/components/ui/button";
+import AnimatedCounter from "@/components/ui/counter";
+import { GrCommentIcon } from "@/components/ui/icons";
+import PhoneLink from "@/components/ui/phone-link";
+import Transition from "@/components/ui/text-appear";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { FaRegSmile } from "react-icons/fa";
+import { FaChartLine } from "react-icons/fa6";
+import { MdOutlineCheckCircleOutline } from "react-icons/md";
+
+const FuelingSuccess = () => {
+  return (
+    <section>
+      <div className="container">
+        <div className="flex gap-7">
+          <div className="grid grid-cols-2 gap-7 flex-1">
+            <div className="rounded-[1.0625rem] group overflow-hidden">
+              <Image
+                src="/business-people.png"
+                alt=""
+                width={306}
+                height={433}
+                className="scale-150 group-hover:scale-125 w-full transition-all"
+              />
+            </div>
+            <div className="bg-black rounded-[1.0625rem] py-8 px-6 flex flex-col items-start justify-between">
+              <div className="flex items-center gap-[0.625rem] pb-7 border-b border-white/20 w-full">
+                <div className="flex items-center justify-center text-h4 w-16 h-16 rounded-full bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] text-white">
+                  <MdOutlineCheckCircleOutline />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-white leading-tight">
+                    Projects Done
+                  </span>
+                  <h5 className="text-h4 text-white leading-tight font-semibold font-inter">
+                    <AnimatedCounter to={400} />+
+                  </h5>
+                </div>
+              </div>
+              <div className="flex items-center gap-[0.625rem] pb-7 border-b border-white/20 w-full">
+                <div className="flex items-center justify-center text-h4 w-16 h-16 rounded-full bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] text-white">
+                  <FaRegSmile />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-white leading-tight">
+                    Happy Clients
+                  </span>
+                  <h5 className="text-h4 text-white leading-tight font-semibold font-inter">
+                    <AnimatedCounter to={47856} />+
+                  </h5>
+                </div>
+              </div>
+              <div className="flex items-center gap-[0.625rem] w-full">
+                <div className="flex items-center justify-center text-h5 w-16 h-16 rounded-full bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] text-white">
+                  <FaChartLine />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-white leading-tight">Success Rate</span>
+                  <h5 className="text-h4 text-white leading-tight font-semibold font-inter">
+                    94.5%
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1">
+            <h2 className="sm:text-h2 text-h4 font-semibold text-secondary leading-tight">
+              <Transition>Fueling Your</Transition>
+              <Transition>Potential for Lasting</Transition>
+              <Transition>Success</Transition>
+            </h2>
+            <Transition>
+              <p className="text-sm text-toned-gray">
+                {`Sed ut pers piciatis unde omnis iste natus error sit volu ptatem
+              accu santium do lore mque lau dantium, totam rem aperiam, eaque
+              ipsaquae ab illo inve ntore veritatis et quasi archi tecto be atae
+              vitae dictasunt explicabo.`}
+              </p>
+            </Transition>
+            <div className="flex items-center flex-wrap sm:gap-7 gap-4 sm:my-10 my-3">
+              <PhoneLink
+                phone="548-584-687"
+                dark
+                darkText
+                lightLabel
+                multiIcon
+                transparent
+              />
+              <div className="flex items-center gap-2">
+                <span className="grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 ">
+                  <GrCommentIcon />
+                </span>
+                <div className="flex flex-col gap-2">
+                  <span className="text-xsm leading-none text-nowrap text-primary-foreground">
+                    Talk To Us Now
+                  </span>
+                  <p className="font-inter text-base text-nowrap font-semibold leading-none text-toned-dark">
+                    Discuss your project
+                  </p>
+                </div>
+              </div>
+            </div>
+            <Button className="" size="icon">
+              Start your project{" "}
+              <span className="group-hover:-rotate-0 -rotate-45 transition-all sm:w-9 w-7 sm:h-9 h-7 text-sm grid place-items-center bg-white text-black rounded-full">
+                <ArrowRight />
+              </span>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FuelingSuccess;

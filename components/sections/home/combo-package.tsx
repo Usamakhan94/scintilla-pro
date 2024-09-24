@@ -15,7 +15,7 @@ const ComboPackage = () => {
     >
       <div className="container">
         <div className="flex items-center justify-center lg:flex-row flex-col sm:gap-20 gap-10">
-          <div className="bg-white shadow-2xl rounded-[0.75rem] sm:p-10 p-6 pt-0 relative isolate mx-2 sm:mx-0">
+          <div className="bg-white shadow-2xl rounded-[0.75rem] sm:p-10 p-6 !pt-0 relative isolate mx-2 sm:mx-0">
             <div className="relative flex sm:items-end items-center justify-between isolate">
               <div>
                 <Transition>
