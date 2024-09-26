@@ -157,7 +157,7 @@ atae vitae dictasunt explicabo. `}
           </div>
           <div className=" border border-white/30 rounded-[0.8125rem] sm:mx-0 mx-2 flex sm:flex-row flex-col items-center justify-between lg:py-6 py-2 md:px-10 px-5 gap-3">
             <p className="xsm:text-sm text-[0.75rem] text-white/80 text-center">
-              Copyright© 2024. Aviorsol.com all right reserved
+              Copyright© 2024. Scintillapro.com all right reserved
             </p>
             <div className="flex sm:flex-row flex-col sm:items-center items-start sm:gap-14">
               <div>
