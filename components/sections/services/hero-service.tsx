@@ -3,7 +3,14 @@ import Transition from "@/components/ui/text-appear";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-const ServiceHero = () => {
+const ServiceHero = ({
+  content,
+}: {
+  content: {
+    mainTitle: string;
+    introPara: string;
+  };
+}) => {
   return (
     <section
       className="bg-no-repeat bg-cover lg:pt-[12.5rem] lg:pb-[8.5rem] pt-[6.5rem] pb-[4.5rem] isolate relative lg:px-0 px-2"
@@ -23,11 +30,11 @@ const ServiceHero = () => {
       <div className="container">
         <div className="flex flex-col items-center justify-center lg:gap-0 gap-8">
           <h1 className="md:text-h1 sm:text-h2 text-h4 text-white text-center font-semibold leading-tight mb-4">
-            <Transition>Customized Web Development</Transition>{" "}
+            <Transition>{content.mainTitle}</Transition>{" "}
           </h1>
           <Transition>
             <p className="text-muted-gray text-sm text-center lg:max-w-[37.5rem] mb-5">
-              {`Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inven tore veritatis et quasi architecto`}
+              {content.introPara}
             </p>
           </Transition>
           <Button className="" size="icon">

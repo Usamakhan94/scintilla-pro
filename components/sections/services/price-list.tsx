@@ -1,7 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PricingContent from "../../../app/pricing-content";
 import PriceCard from "@/components/ui/price-card";
-import Image from "next/image";
 import Transition from "@/components/ui/text-appear";
 const OurPricing = () => {
   const tabTriggers = [
@@ -15,23 +14,6 @@ const OurPricing = () => {
 
   return (
     <section className="bg-background sm:py-20 py-10 relative isolate">
-      {/* <div className="absolute top-0 left-0 -z-10 opacity-45 ">
-        <Image
-          src="/swiggler-rotated.svg"
-          alt="Skwiggly Line"
-          width={420}
-          height={200}
-        />
-      </div>
-      <div className="absolute bottom-0 right-0 -z-10 opacity-45 ">
-        <Image
-          className=" rotate-180"
-          src="/swiggler-rotated.svg"
-          alt="Skwiggly Line"
-          width={420}
-          height={200}
-        />
-      </div> */}
       <div className="container">
         <h5 className="text-h5 leading-none text-primary text-center font-semibold">
           <Transition>Our Pricing</Transition>

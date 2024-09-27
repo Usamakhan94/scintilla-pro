@@ -1,38 +1,38 @@
 import { Button } from "@/components/ui/button";
-import { FilledCommentIcon, GrCommentIcon } from "@/components/ui/icons";
+import { GrCommentIcon } from "@/components/ui/icons";
 import PhoneLink from "@/components/ui/phone-link";
 import Transition from "@/components/ui/text-appear";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-const AboutOurService = () => {
+const AboutOurService = ({
+  content,
+}: {
+  content: {
+    sectionTitle: string;
+    sectionPara: string;
+  };
+}) => {
   return (
     <section className="py-12">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-24 items-center">
-          <div className="relative isolate">
+        <div className="grid lg:grid-cols-2 xl:gap-24 sm:gap-12 items-center">
+          <div className="relative isolate mx-2 sm:mx-0">
             <Image
               src="/web-services.png"
               alt="Section Image"
               height={680}
               width={520}
-              className="ml-auto"
+              className="lg:ml-auto w-full lg:max-h-full max-h-96 object-cover object-center rounded-[20px]"
               unoptimized
             />
           </div>
-          <div className="lg:mt-0 mt-5 mx-2 sm:mx-0">
-            <h2 className="sm:text-h2 text-h4 font-semibold text-secondary leading-tight">
-              <Transition>
-                Creative website design & development services
-              </Transition>
+          <div className="lg:mt-0 sm:mt-5 mt-2 mx-2 sm:mx-0">
+            <h2 className="lg:text-h2 sm:text-h3 text-h4 font-semibold text-secondary leading-tight">
+              <Transition>{content.sectionTitle}</Transition>
             </h2>
             <Transition>
-              <p className="text-body text-toned-gray">
-                {`There are many variations of passages of Lorem Ipsum available, but the maj
-red alteration in some form, by injected humour or ran domised words which
-slightly believable. If you are going to use a pa ssage of Lorem Ipsum, you nee
-re isn't anything embarrassing hidden.`}
-              </p>
+              <p className="text-body text-toned-gray">{content.sectionPara}</p>
             </Transition>
             <div className="flex items-center flex-wrap sm:gap-7 gap-4 sm:my-10 my-3">
               <PhoneLink
