@@ -9,14 +9,20 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { RiMenu4Line } from "react-icons/ri";
+import servicesList from "@/app/services-content";
+import { div } from "framer-motion/client";
 
 const NavBar = () => {
   const Navlinks = [
     { label: "Home", href: "/" },
     { label: "About us", href: "/about-us" },
-    { label: "Services", href: "/services" },
+    { label: "Services", href: "" },
     { label: "Packages", href: "/packages" },
   ];
+  const servicesPages = Object.keys(servicesList);
+
+  console.log(servicesPages);
+
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-white shadow-xl py-2">
       <nav>
@@ -36,11 +42,29 @@ const NavBar = () => {
               </div>
             </div>
             <ul className="flex justify-center items-center gap-8">
-              {Navlinks.map((navlink, index) => (
-                <li key={index}>
-                  <Link href={navlink.href}>{navlink.label}</Link>
-                </li>
-              ))}
+              {Navlinks.map((navlink, index) => {
+                return navlink.label === "Services" ? (
+                  <li key={index} className="relative py-3 isolate group">
+                    <span>{navlink.label}</span>
+                    <div className="absolute top-12 left-0 bg-white flex flex-col p-2 border rounded-[15px] px-4 origin-top scale-y-0 transition-all group-hover:scale-y-100 duration-500">
+                      {servicesPages.map((item, index) => (
+                        <Link
+                          href={`/services/${item}`}
+                          className="text-nowrap"
+                        >
+                          {item.replace("-", " ")}
+                        </Link>
+                      ))}
+                    </div>
+                  </li>
+                ) : (
+                  <li key={index}>
+                    <Link className="text-nowrap py-3" href={navlink.href}>
+                      {navlink.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
             <div className="flex justify-end items-center">
               <Button
