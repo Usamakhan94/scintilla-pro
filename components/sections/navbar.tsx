@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/sheet";
 import { RiMenu4Line } from "react-icons/ri";
 import servicesList from "@/app/services-content";
-import { div } from "framer-motion/client";
 
 const NavBar = () => {
   const Navlinks = [
@@ -49,6 +48,7 @@ const NavBar = () => {
                     <div className="absolute top-12 left-0 bg-white flex flex-col p-2 border rounded-[15px] px-4 origin-top scale-y-0 transition-all group-hover:scale-y-100 duration-500">
                       {servicesPages.map((item, index) => (
                         <Link
+                          key={index}
                           href={`/services/${item}`}
                           className="text-nowrap"
                         >

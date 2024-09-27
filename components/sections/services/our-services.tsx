@@ -24,13 +24,16 @@ const OurServices: React.FC<OurServicesProps> = ({ content, title }) => {
           <Transition>{`Our services`}</Transition>
         </h5>
         <h2 className="sm:text-h2 text-3xl text-center capitalize font-semibold leading-tight mb-4">
-          <Transition>Our {title?.replace("-", " ")} Services</Transition>
+          <Transition>Our {title?.replaceAll("-", " ")} Services</Transition>
         </h2>
         <div>
           <Tabs
             defaultValue={
               content?.tabtriggers?.length
-                ? content?.tabtriggers[0]?.replace(" ", "-")?.toLowerCase()
+                ? content?.tabtriggers[0]
+                    ?.replaceAll(" ", "-")
+                    ?.toLowerCase()
+                    .replace("/", "-")
                 : ""
             }
             className=" mt-8"
@@ -41,8 +44,11 @@ const OurServices: React.FC<OurServicesProps> = ({ content, title }) => {
                   return (
                     <TabsTrigger
                       key={index}
-                      className="xl:w-[10.875rem] sm:px-6 px-4 xl:py-5 sm:py-4 py-2 bg-white rounded-full sm:text-sm text-xsm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
-                      value={tab?.replace(" ", "-").toLowerCase()}
+                      className="xl:min-w-[10.875rem] sm:px-6 px-4 xl:py-5 sm:py-4 py-2 bg-white rounded-full sm:text-sm text-xsm font-medium data-[state=active]:bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] data-[state=active]:text-white"
+                      value={tab
+                        ?.replaceAll(" ", "-")
+                        .toLowerCase()
+                        .replace("/", "-")}
                     >
                       {tab}
                     </TabsTrigger>
@@ -57,8 +63,9 @@ const OurServices: React.FC<OurServicesProps> = ({ content, title }) => {
                     value={
                       content?.tabtriggers?.length
                         ? content?.tabtriggers[index]
-                            ?.replace(" ", "-")
+                            ?.replaceAll(" ", "-")
                             ?.toLowerCase()
+                            .replace("/", "-")
                         : ""
                     }
                   >
@@ -71,8 +78,37 @@ const OurServices: React.FC<OurServicesProps> = ({ content, title }) => {
                           {logo?.tabInfo}
                         </p>
                       </Transition>
-                      <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 ">
-                        <div className="max-h-64 bg-white rounded-[0.875rem]"></div>
+                      <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 mt-8">
+                        {[...Array(4)].map((_, i) => (
+                          <div
+                            key={i}
+                            className="max-h-64 overflow-hidden flex justify-center items-center bg-white rounded-[0.75rem]"
+                          >
+                            <img
+                              src={`/services/${title}/tab-images/${
+                                content?.tabtriggers?.length
+                                  ? content?.tabtriggers[index]
+                                      ?.replaceAll(" ", "-")
+                                      ?.toLowerCase()
+                                      .replace("/", "-")
+                                  : ""
+                              }/${i + 1}.webp`}
+                              alt=""
+                            />
+                            <img
+                              className="w-full"
+                              src={`/services/${title}/tab-images/${
+                                content?.tabtriggers?.length
+                                  ? content?.tabtriggers[index]
+                                      ?.replaceAll(" ", "-")
+                                      ?.toLowerCase()
+                                      .replace("/", "-")
+                                  : ""
+                              }/${i + 1}.gif`}
+                              alt=""
+                            />
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </TabsContent>
