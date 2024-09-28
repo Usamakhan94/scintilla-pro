@@ -8,167 +8,190 @@ const MarketingMethods = () => {
   const tabTriggers = [
     { label: "Logo Design", value: "logo-design" },
     { label: "Website Design", value: "website-design" },
-    { label: "Digital Marketing", value: "digital-marketing" },
+    { label: "Ecommerce Website", value: "ecommerce-website" },
     { label: "Mobile Apps", value: "mobile-apps" },
-    { label: "Video Animation", value: "video-animation" },
+    { label: "NFT Design", value: "nft-design" },
     { label: "Marketing Collateral", value: "marketing-collateral" },
   ];
   const tabContent = [
+    [],
     [
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "Emblem Logo" },
-      { iconTitle: "2D Logo" },
+      { iconTitle: "/portfolio/web-development/1.webp" },
+      { iconTitle: "/portfolio/web-development/2.webp" },
+      { iconTitle: "/portfolio/web-development/3.webp" },
+      { iconTitle: "/portfolio/web-development/4.webp" },
+      { iconTitle: "/portfolio/web-development/5.webp" },
+      { iconTitle: "/portfolio/web-development/6.webp" },
+      { iconTitle: "/portfolio/web-development/7.webp" },
+      { iconTitle: "/portfolio/web-development/8.webp" },
     ],
     [
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "Emblem Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "2D Logo" },
+      { iconTitle: "/portfolio/ecommerce/1.webp" },
+      { iconTitle: "/portfolio/ecommerce/2.webp" },
+      { iconTitle: "/portfolio/ecommerce/3.webp" },
+      { iconTitle: "/portfolio/ecommerce/4.webp" },
+      { iconTitle: "/portfolio/ecommerce/5.webp" },
+      { iconTitle: "/portfolio/ecommerce/6.webp" },
+      { iconTitle: "/portfolio/ecommerce/7.webp" },
+      { iconTitle: "/portfolio/ecommerce/8.webp" },
     ],
     [
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Emblem Logo" },
+      { iconTitle: "/portfolio/app-development/1.webp" },
+      { iconTitle: "/portfolio/app-development/2.webp" },
+      { iconTitle: "/portfolio/app-development/3.webp" },
+      { iconTitle: "/portfolio/app-development/4.webp" },
+      { iconTitle: "/portfolio/app-development/5.webp" },
+      { iconTitle: "/portfolio/app-development/6.webp" },
+      { iconTitle: "/portfolio/app-development/7.webp" },
+      { iconTitle: "/portfolio/app-development/8.webp" },
     ],
     [
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Emblem Logo" },
+      { iconTitle: "/portfolio/nft-design/1.jpg" },
+      { iconTitle: "/portfolio/nft-design/2.jpg" },
+      { iconTitle: "/portfolio/nft-design/3.jpg" },
+      { iconTitle: "/portfolio/nft-design/4.jpg" },
+      { iconTitle: "/portfolio/nft-design/5.jpg" },
+      { iconTitle: "/portfolio/nft-design/6.jpg" },
+      { iconTitle: "/portfolio/nft-design/7.jpg" },
+      { iconTitle: "/portfolio/nft-design/8.jpg" },
     ],
     [
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "Emblem Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Animated Logo" },
-    ],
-    [
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "Emblem Logo" },
+      { iconTitle: "/portfolio/marketing-collateral/1.webp" },
+      { iconTitle: "/portfolio/marketing-collateral/2.webp" },
+      { iconTitle: "/portfolio/marketing-collateral/3.webp" },
+      { iconTitle: "/portfolio/marketing-collateral/4.webp" },
+      { iconTitle: "/portfolio/marketing-collateral/5.webp" },
+      { iconTitle: "/portfolio/marketing-collateral/6.webp" },
+      { iconTitle: "/portfolio/marketing-collateral/7.webp" },
+      { iconTitle: "/portfolio/marketing-collateral/8.webp" },
     ],
   ];
 
-  // const logosTypes = [
-  //   { iconTitle: "Abstract", iconTrigger: "abstract" },
-  //   { iconTitle: "Iconic", iconTrigger: "iconic" },
-  //   { iconTitle: "Illustration", iconTrigger: "illustration" },
-  //   { iconTitle: "Mascot", iconTrigger: "mascot" },
-  //   { iconTitle: "Minimal", iconTrigger: "minimal" },
-  //   { iconTitle: "Monogram - Badge", iconTrigger: "monogram-badge" },
-  //   { iconTitle: "Vector 3D", iconTrigger: "vector-3d" },
-  //   { iconTitle: "Wordmark", iconTrigger: "wordmark" },
-  // ];
+  const logosTypes = [
+    { iconTitle: "Abstract", iconTrigger: "abstract" },
+    { iconTitle: "Iconic", iconTrigger: "iconic" },
+    { iconTitle: "Illustration", iconTrigger: "illustration" },
+    { iconTitle: "Mascot", iconTrigger: "mascot" },
+    { iconTitle: "Minimal", iconTrigger: "minimal" },
+    { iconTitle: "Monogram - Badge", iconTrigger: "monogram-badge" },
+    { iconTitle: "Vector 3D", iconTrigger: "vector-3d" },
+    { iconTitle: "Wordmark", iconTrigger: "wordmark" },
+  ];
 
-  // const logosTypesContent = [
-  //   [
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //   ],
-  //   [
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //   ],
-  //   [
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //   ],
-  //   [
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //   ],
-  //   [
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //   ],
-  //   [
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //   ],
-  //   [
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //   ],
-  //   [
-  //     { iconHref: "/logos-unique/ats.png" },
-  //     { iconHref: "/logos-unique/artastro.png" },
-  //     { iconHref: "/logos-unique/rtc.png" },
-  //     { iconHref: "/logos-unique/palm.png" },
-  //     { iconHref: "/logos-unique/connect.png" },
-  //     { iconHref: "/logos-unique/optimistic.png" },
-  //     { iconHref: "/logos-unique/rise.png" },
-  //     { iconHref: "/logos-unique/titeg.png" },
-  //   ],
-  // ];
+  const logosTypesContent = [
+    [
+      { iconHref: "/logos-unique/abstract/1.jpg" },
+      { iconHref: "/logos-unique/abstract/2.jpg" },
+      { iconHref: "/logos-unique/abstract/3.jpg" },
+      { iconHref: "/logos-unique/abstract/4.jpg" },
+      { iconHref: "/logos-unique/abstract/5.jpg" },
+      { iconHref: "/logos-unique/abstract/6.jpg" },
+      { iconHref: "/logos-unique/abstract/7.jpg" },
+      { iconHref: "/logos-unique/abstract/8.jpg" },
+      { iconHref: "/logos-unique/abstract/9.jpg" },
+      { iconHref: "/logos-unique/abstract/10.jpg" },
+      { iconHref: "/logos-unique/abstract/11.jpg" },
+      { iconHref: "/logos-unique/abstract/12.jpg" },
+    ],
+    [
+      { iconHref: "/logos-unique/iconic/1.jpg" },
+      { iconHref: "/logos-unique/iconic/2.jpg" },
+      { iconHref: "/logos-unique/iconic/3.jpg" },
+      { iconHref: "/logos-unique/iconic/4.jpg" },
+      { iconHref: "/logos-unique/iconic/5.jpg" },
+      { iconHref: "/logos-unique/iconic/6.jpg" },
+      { iconHref: "/logos-unique/iconic/7.jpg" },
+      { iconHref: "/logos-unique/iconic/8.jpg" },
+      { iconHref: "/logos-unique/iconic/9.jpg" },
+      { iconHref: "/logos-unique/iconic/10.jpg" },
+      { iconHref: "/logos-unique/iconic/11.jpg" },
+      { iconHref: "/logos-unique/iconic/12.jpg" },
+    ],
+    [
+      { iconHref: "/logos-unique/Illustration/1.jpg" },
+      { iconHref: "/logos-unique/Illustration/2.jpg" },
+      { iconHref: "/logos-unique/Illustration/3.jpg" },
+      { iconHref: "/logos-unique/Illustration/4.jpg" },
+      { iconHref: "/logos-unique/Illustration/5.jpg" },
+      { iconHref: "/logos-unique/Illustration/6.jpg" },
+      { iconHref: "/logos-unique/Illustration/7.jpg" },
+      { iconHref: "/logos-unique/Illustration/8.jpg" },
+      { iconHref: "/logos-unique/Illustration/9.jpg" },
+      { iconHref: "/logos-unique/Illustration/10.jpg" },
+      { iconHref: "/logos-unique/Illustration/11.jpg" },
+      { iconHref: "/logos-unique/Illustration/12.jpg" },
+    ],
+    [
+      { iconHref: "/logos-unique/mascot/1.jpg" },
+      { iconHref: "/logos-unique/mascot/2.jpg" },
+      { iconHref: "/logos-unique/mascot/3.jpg" },
+      { iconHref: "/logos-unique/mascot/4.jpg" },
+      { iconHref: "/logos-unique/mascot/5.jpg" },
+      { iconHref: "/logos-unique/mascot/6.jpg" },
+      { iconHref: "/logos-unique/mascot/7.jpg" },
+      { iconHref: "/logos-unique/mascot/8.jpg" },
+      { iconHref: "/logos-unique/mascot/9.jpg" },
+      { iconHref: "/logos-unique/mascot/10.jpg" },
+      { iconHref: "/logos-unique/mascot/11.jpg" },
+      { iconHref: "/logos-unique/mascot/12.jpg" },
+    ],
+    [
+      { iconHref: "/logos-unique/minimal/1.jpg" },
+      { iconHref: "/logos-unique/minimal/2.jpg" },
+      { iconHref: "/logos-unique/minimal/3.jpg" },
+      { iconHref: "/logos-unique/minimal/4.jpg" },
+      { iconHref: "/logos-unique/minimal/5.jpg" },
+      { iconHref: "/logos-unique/minimal/6.jpg" },
+      { iconHref: "/logos-unique/minimal/7.jpg" },
+      { iconHref: "/logos-unique/minimal/8.jpg" },
+      { iconHref: "/logos-unique/minimal/9.jpg" },
+      { iconHref: "/logos-unique/minimal/10.jpg" },
+      { iconHref: "/logos-unique/minimal/11.jpg" },
+      { iconHref: "/logos-unique/minimal/12.jpg" },
+    ],
+    [
+      { iconHref: "/logos-unique/monogram-badge/1.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/2.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/3.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/4.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/5.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/6.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/7.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/8.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/9.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/10.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/11.jpg" },
+      { iconHref: "/logos-unique/monogram-badge/12.jpg" },
+    ],
+    [
+      { iconHref: "/logos-unique/vector-3d/1.jpg" },
+      { iconHref: "/logos-unique/vector-3d/2.jpg" },
+      { iconHref: "/logos-unique/vector-3d/3.jpg" },
+      { iconHref: "/logos-unique/vector-3d/4.jpg" },
+      { iconHref: "/logos-unique/vector-3d/5.jpg" },
+      { iconHref: "/logos-unique/vector-3d/6.jpg" },
+      { iconHref: "/logos-unique/vector-3d/7.jpg" },
+      { iconHref: "/logos-unique/vector-3d/8.jpg" },
+      { iconHref: "/logos-unique/vector-3d/9.jpg" },
+      { iconHref: "/logos-unique/vector-3d/10.jpg" },
+      { iconHref: "/logos-unique/vector-3d/11.jpg" },
+      { iconHref: "/logos-unique/vector-3d/12.jpg" },
+    ],
+    [
+      { iconHref: "/logos-unique/wordmark/1.jpg" },
+      { iconHref: "/logos-unique/wordmark/2.jpg" },
+      { iconHref: "/logos-unique/wordmark/3.jpg" },
+      { iconHref: "/logos-unique/wordmark/4.jpg" },
+      { iconHref: "/logos-unique/wordmark/5.jpg" },
+      { iconHref: "/logos-unique/wordmark/6.jpg" },
+      { iconHref: "/logos-unique/wordmark/7.jpg" },
+      { iconHref: "/logos-unique/wordmark/8.jpg" },
+      { iconHref: "/logos-unique/wordmark/9.jpg" },
+      { iconHref: "/logos-unique/wordmark/10.jpg" },
+      { iconHref: "/logos-unique/wordmark/11.jpg" },
+      { iconHref: "/logos-unique/wordmark/12.jpg" },
+    ],
+  ];
 
   return (
     <section className="sm:pt-[9.75rem] pt-[3.75rem] sm:pb-[8.125rem] pb-[2.5rem]">
@@ -199,7 +222,7 @@ const MarketingMethods = () => {
             </TabsList>
             {tabContent.map((logos, indexC) => (
               <TabsContent key={indexC} value={tabTriggers[indexC].value}>
-                {/* {tabTriggers[indexC].label === "Logo Design" ? (
+                {tabTriggers[indexC].label === "Logo Design" ? (
                   <Tabs
                     defaultValue={logosTypes[0].iconTrigger}
                     className="flex flex-col"
@@ -215,7 +238,7 @@ const MarketingMethods = () => {
                         </TabsTrigger>
                       ))}
                     </TabsList>
-                    {logosTypes.map((newLogo, indexLogo) => (
+                    {logosTypes.map((_, indexLogo) => (
                       <TabsContent
                         key={indexLogo}
                         value={logosTypes[indexLogo].iconTrigger}
@@ -225,11 +248,14 @@ const MarketingMethods = () => {
                             (logoUrl, indexing) => (
                               <div
                                 key={indexing}
-                                style={{
-                                  backgroundImage: `url(${logoUrl.iconHref})`,
-                                }}
-                                className="w-full xl:min-h-[24.375rem] py-20 bg-white bg-cover bg-center rounded-[0.625rem]"
-                              ></div>
+                                className="w-full flex overflow-hidden items-center justify-center bg-white rounded-[0.625rem]"
+                              >
+                                <img
+                                  className="w-full object-contain"
+                                  src={logoUrl.iconHref}
+                                  alt=""
+                                />
+                              </div>
                             )
                           )}
                         </div>
@@ -239,41 +265,20 @@ const MarketingMethods = () => {
                 ) : (
                   <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 sm:mx-0 mx-2">
                     {logos.map((brand, indexed) => {
-                      const logoUrl = brand.iconTitle
-                        .split(" ")
-                        .join("-")
-                        .toLowerCase();
                       return (
                         <div
                           key={indexed}
-                          style={{
-                            backgroundImage: `url(/logos/${logoUrl}.webp)`,
-                            backgroundSize: "140px",
-                          }}
-                          className="w-full min-h-[24.375rem] bg-white bg-contain bg-no-repeat bg-center rounded-[0.625rem]"
-                        ></div>
+                          className="max-h-96 overflow-hidden rounded-[0.625rem] group transition-all"
+                        >
+                          <img
+                            className="w-full h-[inherit] object-cover scale-110 group-hover:scale-100 transition-all"
+                            src={brand.iconTitle}
+                          />
+                        </div>
                       );
                     })}
                   </div>
-                )} */}
-                <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 sm:mx-0 mx-2">
-                  {logos.map((brand, indexed) => {
-                    const logoUrl = brand.iconTitle
-                      .split(" ")
-                      .join("-")
-                      .toLowerCase();
-                    return (
-                      <div
-                        key={indexed}
-                        style={{
-                          backgroundImage: `url(/logos/${logoUrl}.webp)`,
-                          backgroundSize: "140px",
-                        }}
-                        className="w-full min-h-[24.375rem] bg-white bg-contain bg-no-repeat bg-center rounded-[0.625rem]"
-                      ></div>
-                    );
-                  })}
-                </div>
+                )}
               </TabsContent>
             ))}
           </Tabs>

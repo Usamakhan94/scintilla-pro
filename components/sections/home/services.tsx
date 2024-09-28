@@ -22,54 +22,44 @@ const Services = () => {
       { iconTitle: "2D Logo" },
     ],
     [
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "Emblem Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "2D Logo" },
+      { iconTitle: "Static website" },
+      { iconTitle: "B2B Portal" },
+      { iconTitle: "B2C Portal" },
+      { iconTitle: "Ecommerce Website" },
+      { iconTitle: "Web Portal" },
+      { iconTitle: "Web Development" },
     ],
     [
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Emblem Logo" },
+      { iconTitle: "SEO" },
+      { iconTitle: "SMM" },
+      { iconTitle: "PPC" },
+      { iconTitle: "Email Marketing" },
+      { iconTitle: "Display Advertising" },
+      { iconTitle: "ORM" },
     ],
     [
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Emblem Logo" },
+      { iconTitle: "Hybrid App" },
+      { iconTitle: "Native App" },
+      { iconTitle: "Android App" },
+      { iconTitle: "iOS App" },
+      { iconTitle: "React Native App" },
+      { iconTitle: "Flutter App" },
     ],
     [
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "Emblem Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Animated Logo" },
+      { iconTitle: "2D Animation" },
+      { iconTitle: "3D Animation" },
+      { iconTitle: "Illustration" },
+      { iconTitle: "Logo Animation" },
+      { iconTitle: "Whiteboard Animation" },
+      { iconTitle: "Explainer Videos" },
     ],
     [
-      { iconTitle: "Typographic Logo" },
-      { iconTitle: "Iconic Logo" },
-      { iconTitle: "Animated Logo" },
-      { iconTitle: "Illustrative Logo" },
-      { iconTitle: "3D Logo" },
-      { iconTitle: "2D Logo" },
-      { iconTitle: "Wordmark Logo" },
-      { iconTitle: "Emblem Logo" },
+      { iconTitle: "Banner Design" },
+      { iconTitle: "Letter Head" },
+      { iconTitle: "Business Card" },
+      { iconTitle: "Magazine" },
+      { iconTitle: "Brochure" },
+      { iconTitle: "Stationery" },
     ],
   ];
   return (
@@ -105,17 +95,15 @@ const Services = () => {
                 <TabsContent key={index} value={tabTriggers[index].value}>
                   <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:gap-6 gap-4 sm:mx-0 mx-2">
                     {logo.map((brand, indexed) => {
-                      const logoUrl: string = brand.iconTitle
-                        .split(" ")
-                        .join("-")
-                        .toLowerCase();
                       return (
                         <div
                           key={indexed}
                           className="bg-white w-full lg:min-h-72 lg:py-0 py-9 rounded-[0.625rem] flex flex-col justify-center items-center md:gap-8 gap-4 cursor-pointer shadow-none hover:shadow-xl transition-all"
                         >
                           <img
-                            src={`/logos/${logoUrl}.png`}
+                            src={`/logos/${tabTriggers[index].value}/icon${
+                              indexed + 1
+                            }.webp`}
                             alt={brand.iconTitle}
                           />
                           <h5 className="lg:text-h5 text-h6 font-medium text-toned-dark">

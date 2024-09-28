@@ -43,7 +43,10 @@ const NavBar = () => {
             <ul className="flex justify-center items-center gap-8">
               {Navlinks.map((navlink, index) => {
                 return navlink.label === "Services" ? (
-                  <li key={index} className="relative py-3 isolate group">
+                  <li
+                    key={index}
+                    className="relative py-3 isolate group capitalize"
+                  >
                     <span>{navlink.label}</span>
                     <div className="absolute top-12 left-0 bg-white flex flex-col p-2 border rounded-[15px] px-4 origin-top scale-y-0 transition-all group-hover:scale-y-100 duration-500">
                       {servicesPages.map((item, index) => (

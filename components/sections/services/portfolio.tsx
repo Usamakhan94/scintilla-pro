@@ -4,7 +4,6 @@ import Transition from "@/components/ui/text-appear";
 import { ArrowRight } from "lucide-react";
 
 const Portfolio = ({ title }: { title: string }) => {
-  console.log(title);
   return (
     <section>
       <div className="container">
