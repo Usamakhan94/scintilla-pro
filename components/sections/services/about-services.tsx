@@ -7,11 +7,13 @@ import Image from "next/image";
 
 const AboutOurService = ({
   content,
+  title,
 }: {
   content: {
     sectionTitle: string;
     sectionPara: string;
   };
+  title: string;
 }) => {
   return (
     <section className="py-12">
@@ -19,11 +21,11 @@ const AboutOurService = ({
         <div className="grid lg:grid-cols-2 xl:gap-24 sm:gap-12 items-center">
           <div className="relative isolate mx-2 sm:mx-0">
             <Image
-              src="/web-services.png"
+              src={`${title}/main-services.png`}
               alt="Section Image"
               height={680}
               width={520}
-              className="lg:ml-auto w-full lg:max-h-full max-h-96 object-cover object-center rounded-[20px]"
+              className="lg:ml-auto lg:w-fit w-full lg:max-h-full max-h-96 object-cover object-center rounded-[20px]"
               unoptimized
             />
           </div>

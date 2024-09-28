@@ -19,12 +19,12 @@ const page = ({ params }: { params: { id: keyof typeof servicesList } }) => {
 
   return (
     <main>
-      <ServiceHero content={service.mainBanner} />
-      <AboutOurService content={service.sectionBanner} />
+      <ServiceHero content={service.mainBanner} title={params.id} />
+      <AboutOurService content={service.sectionBanner} title={params.id} />
       {service.tabs?.tabContent && (
         <OurServices content={service.tabs} title={params.id} />
       )}
-      {service.portfolio && <Portfolio />}
+      {service.portfolio && <Portfolio title={params.id} />}
       <OurPricing />
       <WorkTogether />
       {service?.comboPackage?.pricing && (

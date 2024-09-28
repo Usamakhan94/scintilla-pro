@@ -5,11 +5,13 @@ import Image from "next/image";
 
 const ServiceHero = ({
   content,
+  title,
 }: {
   content: {
     mainTitle: string;
     introPara: string;
   };
+  title: string;
 }) => {
   return (
     <section

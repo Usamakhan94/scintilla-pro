@@ -69,7 +69,7 @@ const OurServices: React.FC<OurServicesProps> = ({ content, title }) => {
                         : ""
                     }
                   >
-                    <div className="bg-white px-12 py-10 rounded-[1.25rem]">
+                    <div className="bg-white sm:px-12 px-8 sm:py-10 py-6 mx-2 rounded-[1.25rem]">
                       <h4 className="text-h4 text-secondary font-semibold leading-none">
                         <Transition>{logo?.tabHeading}</Transition>
                       </h4>
