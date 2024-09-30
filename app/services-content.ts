@@ -620,7 +620,7 @@ const servicesList: ServicesList = {
           {
             tabHeading: "Article Writing Services",
             tabInfo:
-              "We understand that article writing is not a piece of pie and for that reason our professional native English writers are here to rescue you. Digineto masters in article writing because of our dedicated teams of experienced, skilled, and intelligent writers. Let our writing do the talking for your business.",
+              "We understand that article writing is not a piece of pie and for that reason our professional native English writers are here to rescue you. Scintillapro masters in article writing because of our dedicated teams of experienced, skilled, and intelligent writers. Let our writing do the talking for your business.",
           },
           {
             tabHeading: "Blog Writing Services",

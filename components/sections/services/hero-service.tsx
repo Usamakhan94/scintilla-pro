@@ -18,7 +18,6 @@ const ServiceHero = ({
     title !== "social-media-marketing" &&
     title !== "illustration" &&
     title !== "seo-services";
-  console.log(titleImagePresence);
   return (
     <section
       className={`bg-no-repeat bg-cover lg:pt-[12.5rem] lg:pb-[8.5rem] pt-[6.5rem] pb-[4.5rem] isolate relative lg:px-0 px-2 ${

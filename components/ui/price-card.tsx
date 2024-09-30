@@ -1,5 +1,14 @@
+import ContactForm from "./contact-form";
 import { CheckIcon, CommentIcon } from "./icons";
 import Transition from "./text-appear";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 interface PricingDetails {
   title: string;
@@ -59,9 +68,25 @@ const PriceCard = ({
           </li>
         ))}
       </ul>
-      <button className="bg-toned-dark w-full text-body font-semibold rounded-[0.75rem] grid place-items-center transition-all  duration-300 text-white mt-3 min-h-[3.125rem] group-hover:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
-        Order Now
-      </button>
+      <Dialog>
+        <DialogTrigger className="bg-toned-dark w-full text-body font-semibold rounded-[0.75rem] grid place-items-center transition-all  duration-300 text-white mt-3 min-h-[3.125rem] group-hover:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
+          Order Now
+        </DialogTrigger>
+        <DialogContent className="bg-white">
+          <DialogHeader>
+            <DialogTitle className="hidden"></DialogTitle>
+            <DialogDescription>
+              <p className="text-primary-foreground text-sm font-medium">
+                {packageName}
+              </p>
+              <h3 className="text-h3 font-inter font-semibold">
+                <Transition>${pricing}</Transition>
+              </h3>
+              <ContactForm />
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
