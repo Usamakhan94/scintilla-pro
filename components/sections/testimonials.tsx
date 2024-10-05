@@ -75,7 +75,7 @@ const Testimonials = () => {
           {reviews.map((items, index) => (
             <SwiperSlide key={index}>
               <div className=" bg-white rounded-[0.625rem] overflow-hidden">
-                <div className="bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] pt-5 pb-12 pl-6 relative isolate before:absolute before:bg-white before:h-1/3 before:w-[60%] before:bottom-0 before:left-0 before:skew-x-[45deg] before:-translate-x-5">
+                <div className="bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] pt-5 pb-12 pl-6 relative isolate before:absolute before:bg-white before:h-1/3 before:w-[60%] before:-bottom-[1px] before:left-0 before:skew-x-[45deg] before:-translate-x-5">
                   <h5 className="text-h5 text-white font-semibold">
                     <Transition>{items.name}</Transition>
                   </h5>
