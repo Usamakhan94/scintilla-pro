@@ -27,14 +27,13 @@ const PackagesHero = () => {
         <div className="flex items-center justify-between lg:flex-row flex-col lg:gap-0 gap-8">
           <div className="lg:max-w-[37rem]">
             <h1 className="md:text-h1 sm:text-h2 text-h4 text-white font-semibold leading-tight mb-4">
-              <Transition>Our Pricing &</Transition>{" "}
-              <Transition>Packages</Transition>
+              <Transition>Customer Base because
+              of our High-End Work</Transition>
             </h1>
             <Transition>
               <p className="text-white text-sm  mb-5">
-                {`Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inven
-tore veritatis et quasi architecto`}
+                {`We highly regard our customers' reviews as it helps us to do better in
+the future and apply any changes in our work processes if required`}
               </p>
             </Transition>
             <Button className="" size="icon">

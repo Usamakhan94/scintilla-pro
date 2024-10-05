@@ -26,6 +26,7 @@ const NavBar = () => {
     { label: "About us", href: "/about-us" },
     { label: "Services", href: "" },
     { label: "Packages", href: "/packages" },
+    { label: "Combo Packages", href: "/combo-packages" },
   ];
   const servicesPages = Object.keys(servicesList);
 
@@ -72,7 +73,7 @@ const NavBar = () => {
                         <Link
                           key={index}
                           href={`/services/${item}`}
-                          className="text-nowrap"
+                          className="text-nowrap pb-2 mb-2 border-b last:border-b-0 last:pb-0 last:mb-0"
                         >
                           {item.replace("-", " ")}
                         </Link>

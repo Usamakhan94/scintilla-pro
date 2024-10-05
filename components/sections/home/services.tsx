@@ -65,14 +65,18 @@ const Services = () => {
   return (
     <section className="xl:pb-40 lg:pb-32 pb-20">
       <div className="container">
+      <h5 className="sm:text-h5 text-base text-center text-primary-foreground font-semibold mb-4 sm:mx-0 mx-2">
+          <Transition>
+            {`Our unparalleled websites`}
+          </Transition>
+        </h5>
         <h2 className="sm:text-h2 text-3xl text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
-          <Transition>Our services to grow your online business</Transition>
+          <Transition>To Build Concrete Digital Existence.</Transition>
         </h2>
         <Transition>
           <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
-            {`There are many variations of passages of Lorem Ipsum available, but
-          the majorty have suffered alteration in some form by injected humour
-          or randomised words which don't look even slightly believable.`}
+            {`Our thorough website development process starts by comprehending your business aims and the targeted audience so that we can design
+and create striking websites, logo designs, digital marketing, mobile apps, and video animation.`}
           </p>
         </Transition>
         <div>

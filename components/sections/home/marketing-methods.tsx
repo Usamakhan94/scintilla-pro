@@ -196,15 +196,19 @@ const MarketingMethods = () => {
   return (
     <section className="sm:pt-[9.75rem] pt-[3.75rem] sm:pb-[8.125rem] pb-[2.5rem]">
       <div className="container">
+      <h5 className="sm:text-h5 text-base text-center text-primary font-semibold mb-4 sm:mx-0 mx-2">
+          <Transition>
+            {`Goal and Client-Oriented Web Designs`}
+          </Transition>
+        </h5>
         <h2 className="sm:text-h2 text-[24px] text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
           <Transition>Together With Focused </Transition>
           <Transition>Marketing Methods</Transition>
         </h2>
         <Transition>
           <p className="text-sm text-toned-gray max-w-[800px] text-center sm:mx-auto mx-2">
-            {`There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form by injected humour
-          or randomised words which don't look even slightly believable.`}
+            {`We create brands with impeccable logo and design knowledge incorporated with terms that
+attract your target audience.`}
           </p>
         </Transition>
         <div>

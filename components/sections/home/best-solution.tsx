@@ -21,21 +21,18 @@ const BestSolution = () => {
       <div className="container">
         <div className="grid xl:grid-cols-2 sm:px-0 px-2">
           <div className="max-w-[35.625rem]">
+          <h5 className="sm:text-h5 text-base text-start text-primary font-semibold mb-4 sm:mx-0 mx-2">
+          <Transition>
+            {`Endorse Your Business`}
+          </Transition>
+        </h5>
             <h2 className="xl:text-h2 sm:text-h3 text-[1.75rem] text-white font-semibold leading-tight mb-6">
-              <Transition>A future-oriented </Transition>
-              <Transition>agency that provides </Transition>
-              <Transition>the best solutions</Transition>
+              <Transition>With Influential Client Experience-Driven Websites. </Transition>
             </h2>
             <Transition>
               <p className="text-white text-sm mb-8">
                 {`
-              There are many variations of passages of Lorem Ipsum available,
-              but the majorty have suffer ed alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable. If you are going to use a passage of Lor em
-              Ipsum, you need to be sure the re isn't anything embarrassing
-              hidden in them iddle of text. All the Lorem Ipsum generators on
-              the Internet tend to repeat prede fined chunks as necessary, `}
+The creative team at Digineto knows how crucial a website presence in the digital world is. We believe in providing our customers with premium website solutions, therefore, we work closely with our clients to understand their requirements, deliver timely results, and boost up your business proficiency. `}
               </p>
             </Transition>
             <div className="flex items-center gap-[0.625rem] flex-wrap">

@@ -6,27 +6,26 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const navLinks = [
   [
-    { href: "#", label: "Home" },
-    { href: "#", label: "About us" },
-    { href: "#", label: "Packages" },
-    { href: "#", label: "Combo packages" },
+    { href: "/", label: "Home" },
+    { href: "/about-us", label: "About us" },
+    { href: "/packages", label: "Packages" },
+    { href: "/combo-packages", label: "Combo packages" },
     { href: "#", label: "Portfolio" },
-    { href: "#", label: "Sitemap" },
   ],
   [
-    { href: "#", label: "Website design" },
-    { href: "#", label: "Logo Design" },
-    { href: "#", label: "Ecommerce Solution" },
-    { href: "#", label: "Animation" },
-    { href: "#", label: "Illustration" },
-    { href: "#", label: "NFT Design" },
-    { href: "#", label: "Marketing Collateral" },
+    { href: "/services/web-development", label: "Website Development" },
+    { href: "/services/logo-design", label: "Logo Design" },
+    { href: "/services/ecommerce", label: "Ecommerce Solution" },
+    { href: "/services/video-animation", label: "Animation" },
+    { href: "/services/illustration", label: "Illustration" },
+    { href: "/services/nft-design", label: "NFT Design" },
+    { href: "/services/marketing-collateral", label: "Marketing Collateral" },
   ],
   [
-    { href: "#", label: "Smm" },
-    { href: "#", label: "Creative Copywriting" },
-    { href: "#", label: "Mobile apps" },
-    { href: "#", label: "SEO Services" },
+    { href: "/services/social-media-marketing", label: "SMM" },
+    { href: "/services/creative-copywriting", label: "Creative Copywriting" },
+    { href: "/services/app-development", label: "Mobile apps" },
+    { href: "/services/seo-services", label: "SEO Services" },
   ],
 ];
 
@@ -40,10 +39,10 @@ const Footer = () => {
   const pathName = usePathname().split("/")[1];
   return (
     <footer
-      className="relative lg:h-[550px] sm:h-[600px] h-[700px] bg-black overflow-hidden"
+      className="relative lg:h-[550px] sm:h-[650px] h-[750px] bg-black overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 lg:h-[550px] sm:h-[600px] h-[700px] w-full lg:top-[calc(100vh-550px)] sm:top-[calc(100vh-600px)] top-[calc(100vh-700px)]">
+      <div className="fixed bottom-0 lg:h-[550px] sm:h-[650px] h-[750px] w-full lg:top-[calc(100vh-550px)] sm:top-[calc(100vh-650px)] top-[calc(100vh-750px)]">
         <div className="absolute top-0 left-0 -z-10 ">
           <Image
             src="/swiggler-rotated.svg"
@@ -155,10 +154,16 @@ atae vitae dictasunt explicabo. `}
               </ul>
             </div>
           </div>
-          <div className=" border border-white/30 rounded-[0.8125rem] sm:mx-0 mx-2 flex sm:flex-row flex-col items-center justify-between lg:py-6 py-2 md:px-10 px-5 gap-3">
+          <div className=" border border-white/30 rounded-[0.8125rem] sm:mx-0 mx-2 flex lg:flex-row flex-col items-center justify-between lg:py-6 py-2 md:px-4 px-5 gap-3">
             <p className="xsm:text-sm text-[0.75rem] text-white/80 text-center">
               Copyright© 2024. Scintillapro.com all right reserved
             </p>
+            <div className="flex items-center justify-center gap-2 flex-wrap">
+              <Link className="text-white sm:border-r-2 sm:border-white/50 pr-2" href="/privacy">Privacy</Link>
+              <Link className="text-white sm:border-r-2 sm:border-white/50 pr-2" href="/terms">Terms Of Use</Link>
+              <Link className="text-white sm:border-r-2 sm:border-white/50 pr-2" href="/refund">Refund</Link>
+              <Link className="text-white" href="/support">Customer Support</Link>
+            </div>
             <div className="flex sm:flex-row flex-col sm:items-center items-start sm:gap-14">
               <div>
                 <h6 className="text-toned-gray text-sm font-medium">Email</h6>

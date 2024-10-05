@@ -5,12 +5,17 @@ import Image from "next/image";
 import Transition from "@/components/ui/text-appear";
 const AllPricing = () => {
   const tabTriggers = [
+    { label: "Website Development", value: "website-design" },
     { label: "Logo Design", value: "logo-design" },
-    { label: "Website Design", value: "website-design" },
-    { label: "Digital Marketing", value: "digital-marketing" },
-    { label: "Mobile Apps", value: "mobile-apps" },
-    { label: "Video Animation", value: "video-animation" },
+    { label: "Combo", value: "combo" },
+    { label: "Ecommerce Solutions", value: "ecommerce-solutions" },
+    { label: "Animation", value: "animation" },
+    { label: "NFT Design", value: "nft-design" },
+    { label: "Illustration", value: "illustration" },
     { label: "Marketing Collateral", value: "marketing-collateral" },
+    { label: "SEO", value: "seo-services" },
+    { label: "SMM", value: "smm-services" },
+    { label: "Creative Copywriting", value: "creative-copywriting" },
   ];
 
   return (

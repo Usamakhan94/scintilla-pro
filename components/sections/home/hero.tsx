@@ -31,17 +31,16 @@ const Hero = () => {
       </div>
       <div className="container">
         <div className="flex items-center justify-between lg:flex-row flex-col lg:gap-0 gap-8">
-          <div className="lg:max-w-[34.375rem]">
+          <div className="lg:max-w-[37.5rem]">
+          <h5 className="text-h5 leading-none text-primary text-left font-semibold">
+          <Transition>Proficient Design Agency.</Transition>
+          </h5>
             <h1 className="md:text-h1 sm:text-h2 text-h4 text-white font-semibold leading-tight mb-4">
-              <Transition>Transforming</Transition>{" "}
-              <Transition>Ideas into Digital</Transition>{" "}
-              <Transition> Realities</Transition>
+              <Transition>Surpassing with the Modernization & Originality.</Transition>{" "}
             </h1>
             <Transition>
               <p className="text-muted-gray text-sm  mb-5">
-                {`Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inven tore veritatis et quasi architecto`}
+                {`Helping brands to digitally transform with a spice of innovation and technical expertise.`}
               </p>
             </Transition>
             <Button className="" size="icon">

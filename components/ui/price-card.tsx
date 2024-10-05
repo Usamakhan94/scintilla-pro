@@ -1,3 +1,5 @@
+'use client'
+import { useRef, useState } from "react";
 import ContactForm from "./contact-form";
 import { CheckIcon, CommentIcon } from "./icons";
 import Transition from "./text-appear";
@@ -9,6 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { ChevronDown } from "lucide-react";
 
 interface PricingDetails {
   title: string;
@@ -26,6 +29,8 @@ const PriceCard = ({
   listDetails,
   whiteCard,
 }: PricingDetails) => {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [viewList, setViewList] = useState(false)
   return (
     <div
       className={` transition-all duration-300 hover:shadow-2xl 2xl:p-6 p-4 pt-6 rounded-[0.625rem] relative group ${
@@ -48,13 +53,20 @@ const PriceCard = ({
           <p className="sm:text-sm text-xsm text-white">Live Chat</p>
         </div>
       </div>
+      {quality? 
       <Transition>
         <p className="text-sm text-toned-gray mb-6">{quality}</p>
       </Transition>
-      <ul
-        className={`rounded-[0.625rem] 2xl:px-5 px-3 py-8 transition-all duration-300 ${
+      : null}
+      <div 
+      ref={ref}
+      className={`rounded-[0.625rem] overflow-hidden 2xl:px-5 px-3 py-8 transition-all duration-300 relative isolate ${
           whiteCard ? "bg-background" : "bg-white group-hover:bg-background"
         }`}
+          style={{maxHeight: viewList? ref?.current?.scrollHeight : '350px'}}
+        >
+      <ul
+      
       >
         {listDetails.map((listItem: string, index: number) => (
           <li
@@ -68,6 +80,13 @@ const PriceCard = ({
           </li>
         ))}
       </ul>
+
+      <div onClick={()=> setViewList(prev => !prev)} className="absolute bottom-2 cursor-pointer shadow-sm group-hover:shadow-xl right-2 bg-background group-hover:bg-white transition-all rounded-full grid place-items-center w-10 h-10 ">
+        <span className="transition-all" style={{rotate: viewList? '180deg' : '0deg'}}>
+        <ChevronDown/>
+        </span>
+        </div>
+      </div>
       <Dialog>
         <DialogTrigger className="bg-toned-dark w-full text-body font-semibold rounded-[0.75rem] grid place-items-center transition-all  duration-300 text-white mt-3 min-h-[3.125rem] group-hover:bg-gradient-to-r from-[#21D6A2] to-[#4F60E8]">
           Order Now

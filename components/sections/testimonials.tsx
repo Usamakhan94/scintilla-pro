@@ -10,34 +10,40 @@ import Transition from "@/components/ui/text-appear";
 const Testimonials = () => {
   const reviews = [
     {
-      name: "Michale smith",
-      desc: "Sed ut pers piciatis unde omnis iste natus error sit volu ptatem accu santium do lore mque lau dantium, totam rem aperiam, eaque ipsa quae ab illo i n ve nt ore verit atis et quasi archi tecto atae vitae dictasunt explicabo.",
+      name: "Samantha Manning",
+      desc: "I found Digineto to be easy to use and with just a click. These guys helped me to decide on which logo I wanted for my business. Digineto has made my business look more professional and meaningful!",
       imageUrl: "/michale.webp",
-      rating: "4.9",
+      rating: "5",
     },
     {
-      name: "Isabella George",
-      desc: "Sed ut pers piciatis unde omnis iste natus error sit volu ptatem accu santium do lore mque lau dantium, totam rem aperiam, eaque ipsa quae ab illo i n ve nt ore verit atis et quasi archi tecto atae vitae dictasunt explicabo.",
+      name: "Sean Bishop",
+      desc: "I would like to thank Digineto for making my life easier. These guys are really fantastic in their work, they are very creative and they have the best CSS and jQuery skills. Very impressed with their professionalism!",
       imageUrl: "/isabella.webp",
-      rating: "4.9",
+      rating: "5",
     },
     {
-      name: "Michale smith",
-      desc: "Sed ut pers piciatis unde omnis iste natus error sit volu ptatem accu santium do lore mque lau dantium, totam rem aperiam, eaque ipsa quae ab illo i n ve nt ore verit atis et quasi archi tecto atae vitae dictasunt explicabo.",
+      name: "Kai Barry",
+      desc: "Overall, I’m very satisfied with the service I received. The customer support team helped me secure a logo for my future business venture. I wanted a logo on the website, paid for it and got it timely. Also some nice business cards. Appreciate the service and highly recommended!",
       imageUrl: "/michale.webp",
-      rating: "4.9",
+      rating: "5",
     },
     {
-      name: "Isabella George",
-      desc: "Sed ut pers piciatis unde omnis iste natus error sit volu ptatem accu santium do lore mque lau dantium, totam rem aperiam, eaque ipsa quae ab illo i n ve nt ore verit atis et quasi archi tecto atae vitae dictasunt explicabo.",
+      name: "Ray Gregory",
+      desc: "Amazing to work with them! Quick turnaround, professional and keep you up to date throughout your project! And I love my new logo and website design! I highly recommend working with Digineto!",
       imageUrl: "/isabella.webp",
-      rating: "4.9",
+      rating: "5",
     },
     {
-      name: "Michale smith",
-      desc: "Sed ut pers piciatis unde omnis iste natus error sit volu ptatem accu santium do lore mque lau dantium, totam rem aperiam, eaque ipsa quae ab illo i n ve nt ore verit atis et quasi archi tecto atae vitae dictasunt explicabo.",
+      name: "Liam Thompson",
+      desc: "Digineto is one of the most professional digital companies I've ever dealt with. Their customer service is second to none and their work is timely and of the highest quality. They are highly recommended from my side.",
       imageUrl: "/michale.webp",
-      rating: "4.9",
+      rating: "5",
+    },
+    {
+      name: "Mathew Ramsey",
+      desc: "Digineto has an outstanding web designers & developers team! They designed and develop a new website for our company. Their portfolio is stunning and I would highly recommend them to anyone who's looking to get a professional, operative, attractive website! Thank you!",
+      imageUrl: "/michale.webp",
+      rating: "5",
     },
   ];
   return (
