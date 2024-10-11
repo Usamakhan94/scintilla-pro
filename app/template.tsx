@@ -6,12 +6,13 @@ export default function Template({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const lenis = new Lenis();
 
-    function raf(time: any) {
+    function raf(time: DOMHighResTimeStamp) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
 
     requestAnimationFrame(raf);
   }, []);
+
   return <>{children}</>;
 }
