@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PricingContent from "../../../app/pricing-content";
 import PriceCard from "@/components/ui/price-card";
 import Transition from "@/components/ui/text-appear";
-const OurPricing = ({ title }: { title: string }) => {
+const OurPricing = () => {
   const tabTriggers = [
     { label: "Website Development", value: "website-design" },
     { label: "Logo Design", value: "logo-design" },
