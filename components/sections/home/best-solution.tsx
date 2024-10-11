@@ -32,7 +32,7 @@ const BestSolution = () => {
             <Transition>
               <p className="text-white text-sm mb-8">
                 {`
-The creative team at Digineto knows how crucial a website presence in the digital world is. We believe in providing our customers with premium website solutions, therefore, we work closely with our clients to understand their requirements, deliver timely results, and boost up your business proficiency. `}
+The creative team at Scintillapro knows how crucial a website presence in the digital world is. We believe in providing our customers with premium website solutions, therefore, we work closely with our clients to understand their requirements, deliver timely results, and boost up your business proficiency. `}
               </p>
             </Transition>
             <div className="flex items-center gap-[0.625rem] flex-wrap">

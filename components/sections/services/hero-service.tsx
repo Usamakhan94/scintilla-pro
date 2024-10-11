@@ -1,7 +1,9 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Transition from "@/components/ui/text-appear";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const ServiceHero = ({
   content,
@@ -13,18 +15,25 @@ const ServiceHero = ({
   };
   title: string;
 }) => {
+  const [bannerBg, setBannerBg] = useState("/");
   const titleImagePresence: boolean =
     title !== "creative-copywriting" &&
     title !== "social-media-marketing" &&
     title !== "illustration" &&
+    title !== "app-development" &&
+    title !== "ecommerce" &&
+    title !== "logo-design" &&
     title !== "seo-services";
+  useEffect(() => {
+    setBannerBg(title);
+  }, [title]);
   return (
     <section
       className={`bg-no-repeat bg-cover lg:pt-[12.5rem] lg:pb-[8.5rem] pt-[6.5rem] pb-[4.5rem] isolate relative lg:px-0 px-2 ${
         title === "nft-design" ? "!pb-0" : ""
       }`}
       style={{
-        backgroundImage: `url(${title}/about_bnr-img.png)`,
+        backgroundImage: `url(${bannerBg}/about_bnr-img.png)`,
       }}
     >
       <div className="absolute top-0 left-0 -z-10 ">

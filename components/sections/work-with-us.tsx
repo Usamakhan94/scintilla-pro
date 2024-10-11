@@ -33,10 +33,7 @@ const WorkWithUs = () => {
             </h2>
             <Transition>
               <p className="text-body text-toned-gray">
-                {`Sed ut pers piciatis unde omnis iste natus error sit volu ptatem
-              accu santium do lore mque lau dantium, totam rem aperiam, eaque
-              ipsaquae ab illo inve ntore veritatis et quasi archi tecto be atae
-              vitae dictasunt explicabo.`}
+                {`Contact us to discuss your logo design or general inquiries`}
               </p>
             </Transition>
             <div className="py-8 flex flex-wrap gap-5 border-y border-[#00000052] w-fit pr-5 mt-7 relative before:absolute before:w-2 before:h-2 before:border-r before:border-[#00000052] before:border-t before:-top-[5px] before:right-0 before:rotate-45 after:absolute after:w-2 after:h-2 after:border-l after:border-[#00000052] after:border-b after:-bottom-[5px] after:left-0 after:rotate-45">

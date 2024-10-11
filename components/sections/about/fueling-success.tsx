@@ -73,16 +73,11 @@ const FuelingSuccess = () => {
           </div>
           <div className="flex-1">
             <h2 className="sm:text-h2 text-[1.75rem] font-semibold text-secondary leading-tight">
-              <Transition>Fueling Your</Transition>
-              <Transition>Potential for Lasting</Transition>
-              <Transition>Success</Transition>
+              <Transition>Satisfying Our Clients</Transition>
             </h2>
             <Transition>
               <p className="text-sm text-toned-gray">
-                {`Sed ut pers piciatis unde omnis iste natus error sit volu ptatem
-              accu santium do lore mque lau dantium, totam rem aperiam, eaque
-              ipsaquae ab illo inve ntore veritatis et quasi archi tecto be atae
-              vitae dictasunt explicabo.`}
+                {`We work with the conviction that our clients define us, which is why we ensure that what our clients get helps them realize their potential and reach milestones as they grow as a business.`}
               </p>
             </Transition>
             <div className="flex items-center flex-wrap sm:gap-7 gap-4 sm:my-10 my-3">

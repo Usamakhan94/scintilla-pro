@@ -10,39 +10,27 @@ import Transition from "@/components/ui/text-appear";
 const Testimonials = () => {
   const reviews = [
     {
-      name: "Samantha Manning",
-      desc: "I found Digineto to be easy to use and with just a click. These guys helped me to decide on which logo I wanted for my business. Digineto has made my business look more professional and meaningful!",
-      imageUrl: "/michale.webp",
+      name: "Trina Gill, Senior Publisher",
+      desc: "Scintillapro is a life savior. My business was all set to operate but my website crashed at the last moment. Thanks to the team at Scintillapro.",
+      imageUrl: "/testimonials/1.png",
       rating: "5",
     },
     {
-      name: "Sean Bishop",
-      desc: "I would like to thank Digineto for making my life easier. These guys are really fantastic in their work, they are very creative and they have the best CSS and jQuery skills. Very impressed with their professionalism!",
-      imageUrl: "/isabella.webp",
+      name: "Tyrone Turner, Editor",
+      desc: "Worth sharing my experience with Scintillapro. The team has all the expertise to design a business logo and they also guided me through the process.",
+      imageUrl: "/testimonials/2.png",
       rating: "5",
     },
     {
-      name: "Kai Barry",
-      desc: "Overall, I’m very satisfied with the service I received. The customer support team helped me secure a logo for my future business venture. I wanted a logo on the website, paid for it and got it timely. Also some nice business cards. Appreciate the service and highly recommended!",
-      imageUrl: "/michale.webp",
+      name: "Milton Sims, Brand Manager",
+      desc: "Highly appreciated their work and the level of commitment. They worked according to our business needs and their work was flawless.",
+      imageUrl: "/testimonials/3.png",
       rating: "5",
     },
     {
-      name: "Ray Gregory",
-      desc: "Amazing to work with them! Quick turnaround, professional and keep you up to date throughout your project! And I love my new logo and website design! I highly recommend working with Digineto!",
-      imageUrl: "/isabella.webp",
-      rating: "5",
-    },
-    {
-      name: "Liam Thompson",
-      desc: "Digineto is one of the most professional digital companies I've ever dealt with. Their customer service is second to none and their work is timely and of the highest quality. They are highly recommended from my side.",
-      imageUrl: "/michale.webp",
-      rating: "5",
-    },
-    {
-      name: "Mathew Ramsey",
-      desc: "Digineto has an outstanding web designers & developers team! They designed and develop a new website for our company. Their portfolio is stunning and I would highly recommend them to anyone who's looking to get a professional, operative, attractive website! Thank you!",
-      imageUrl: "/michale.webp",
+      name: "Belle Boyd, Senior Content Creator",
+      desc: "A loud shout out to the team at Scintillapro. My mobile application is running smoothly and all my clients are satisfied. This was not possible without their effort.",
+      imageUrl: "/testimonials/4.png",
       rating: "5",
     },
   ];

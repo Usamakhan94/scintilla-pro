@@ -27,6 +27,8 @@ const NavBar = () => {
     { label: "Services", href: "" },
     { label: "Packages", href: "/packages" },
     { label: "Combo Packages", href: "/combo-packages" },
+    { label: "Showcase", href: "/showcase" },
+    { label: "Reviews", href: "/reviews" },
   ];
   const servicesPages = Object.keys(servicesList);
 
@@ -43,10 +45,12 @@ const NavBar = () => {
     <header className="absolute top-0 left-0 w-full z-50 bg-white shadow-xl py-2">
       <nav>
         <div className="container">
-          <div className="hidden lg:grid grid-cols-3 ">
+          <div className="hidden lg:flex justify-between items-center ">
             <div className="relative">
-              <Image src="/logo.svg" alt="Logo" width="220" height="60" />
-              <Link
+              <Link href="/">
+                <Image src="/logo.svg" alt="Logo" width="220" height="60" />
+              </Link>
+              {/* <Link
                 href="/"
                 className="bg-white shadow-2xl xl:w-[60%]  flex items-center justify-center py-3 px-4 rounded-bl-[30px] rounded-br-[30px] absolute -top-2 left-0"
               >
@@ -58,9 +62,9 @@ const NavBar = () => {
                   width="260"
                   height="60"
                 />
-              </Link>
+              </Link> */}
             </div>
-            <ul className="flex justify-center items-center gap-8">
+            <ul className="flex justify-center items-center xl:gap-8 gap-4">
               {Navlinks.map((navlink, index) => {
                 return navlink.label === "Services" ? (
                   <li

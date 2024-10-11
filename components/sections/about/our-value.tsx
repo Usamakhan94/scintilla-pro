@@ -14,10 +14,7 @@ const OurValue = () => {
               <Transition>Our Mission</Transition>
             </h4>
             <Transition>
-              <p className="text-toned-gray text-sm text-center">{`There are many variations of passages of Lorem Ipsum available, but the maj
-red alteration in some form, by injected humour or ran domised words which
-slightly believable. If you are going to use a pa ssage of Lorem Ipsum, you nee
-re isn't anything embarrassing hidden.`}</p>
+              <p className="text-toned-gray text-sm text-center">{`We work with the mission of delivering breakthrough digital solutions to businesses around the world, while paving the way for socially responsible businesses.`}</p>
             </Transition>
           </div>
           <div className="bg-white rounded-[1.875rem] lg:py-[4.375rem] py-[2.375rem] lg:px-[3.125rem] px-[1.5rem] flex flex-col justify-center items-center gap-[0.625rem]">
@@ -28,10 +25,7 @@ re isn't anything embarrassing hidden.`}</p>
               <Transition>Our Vision</Transition>
             </h4>
             <Transition>
-              <p className="text-toned-gray text-sm text-center">{`There are many variations of passages of Lorem Ipsum available, but the maj
-red alteration in some form, by injected humour or ran domised words which
-slightly believable. If you are going to use a pa ssage of Lorem Ipsum, you nee
-re isn't anything embarrassing hidden.`}</p>
+              <p className="text-toned-gray text-sm text-center">{`Diversify the world of tech and become a leader in the digital community, while creating the best product and using businesses to inspire entrepreneurs with the power of technology.`}</p>
             </Transition>
           </div>
         </div>

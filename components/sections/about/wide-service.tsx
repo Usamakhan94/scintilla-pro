@@ -5,14 +5,14 @@ const WideService = () => {
     <section>
       <div className="container">
         <h5 className="sm:text-h5 text-base text-center text-primary-foreground font-semibold mb-4 sm:mx-0 mx-2">
-          <Transition>{`Our services`}</Transition>
+          <Transition>{`Scintillapro Services`}</Transition>
         </h5>
         <h3 className="sm:text-h2 text-3xl text-center font-semibold leading-tight sm:mx-0 mx-2">
-          <Transition>{`Our wide range of services`}</Transition>
+          <Transition>{`A wide variety of premium services we offer`}</Transition>
         </h3>
         <Transition>
-          <p className="text-toned-gray text-sm text-center">{`There are many variations of passages of Lorem Ipsum available, but the maj red alteration in some form, by injected humour
-domised words which slightly believable.`}</p>
+          <p className="text-toned-gray text-sm text-center">{`We are one of the leading digital design firms concerned with meeting the needs of their clients. Our work is impeccable and
+incomparable. We enhance your business efficiency and results through our innovative and fantastic work ethic`}</p>
         </Transition>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-6 gap-3 sm:mt-8 mt-4 mx-2 sm:mx-0">
           <div

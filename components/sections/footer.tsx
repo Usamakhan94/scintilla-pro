@@ -72,9 +72,7 @@ const Footer = () => {
                 />
               </div>
               <p className="text-white sm:text-sm text-xsm sm:mb-5 mb-1">
-                {`Sed ut pers piciatis unde omnis iste natus error sit volu
-do lore mque laudantium, totam rem aperiam, eaquei
-atae vitae dictasunt explicabo. `}
+                {`Full-stack Web, Mobile Design and Development Company. `}
               </p>
               <div className="flex items-center gap-2 flex-wrap">
                 <p className="text-white font-semibold sm:text-h6 text-base ">

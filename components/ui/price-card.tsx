@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useRef, useState } from "react";
 import ContactForm from "./contact-form";
 import { CheckIcon, CommentIcon } from "./icons";
@@ -30,7 +30,7 @@ const PriceCard = ({
   whiteCard,
 }: PricingDetails) => {
   const ref = useRef<HTMLDivElement | null>(null);
-  const [viewList, setViewList] = useState(false)
+  const [viewList, setViewList] = useState(false);
   return (
     <div
       className={` transition-all duration-300 hover:shadow-2xl 2xl:p-6 p-4 pt-6 rounded-[0.625rem] relative group ${
@@ -53,38 +53,42 @@ const PriceCard = ({
           <p className="sm:text-sm text-xsm text-white">Live Chat</p>
         </div>
       </div>
-      {quality? 
-      <Transition>
-        <p className="text-sm text-toned-gray mb-6">{quality}</p>
-      </Transition>
-      : null}
-      <div 
-      ref={ref}
-      className={`rounded-[0.625rem] overflow-hidden 2xl:px-5 px-3 py-8 transition-all duration-300 relative isolate ${
+      {quality ? (
+        <Transition>
+          <p className="text-sm text-toned-gray mb-6">{quality}</p>
+        </Transition>
+      ) : null}
+      <div
+        ref={ref}
+        className={`rounded-[0.625rem] overflow-hidden 2xl:px-5 px-3 py-8 transition-all duration-300 relative isolate ${
           whiteCard ? "bg-background" : "bg-white group-hover:bg-background"
         }`}
-          style={{maxHeight: viewList? ref?.current?.scrollHeight : '350px'}}
-        >
-      <ul
-      
+        style={{ maxHeight: viewList ? ref?.current?.scrollHeight : "350px" }}
       >
-        {listDetails.map((listItem: string, index: number) => (
-          <li
-            key={index}
-            className="sm:text-sm text-xsm text-toned-gray flex items-center gap-1 last:mb-0 mb-3"
-          >
-            <span>
-              <CheckIcon />
-            </span>
-            <span>{listItem}</span>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {listDetails.map((listItem: string, index: number) => (
+            <li
+              key={index}
+              className="sm:text-sm text-xsm text-toned-gray flex items-center gap-1 last:mb-0 mb-3"
+            >
+              <span>
+                <CheckIcon />
+              </span>
+              <span>{listItem}</span>
+            </li>
+          ))}
+        </ul>
 
-      <div onClick={()=> setViewList(prev => !prev)} className="absolute bottom-2 cursor-pointer shadow-sm group-hover:shadow-xl right-2 bg-background group-hover:bg-white transition-all rounded-full grid place-items-center w-10 h-10 ">
-        <span className="transition-all" style={{rotate: viewList? '180deg' : '0deg'}}>
-        <ChevronDown/>
-        </span>
+        <div
+          onClick={() => setViewList((prev) => !prev)}
+          className="absolute bottom-2 cursor-pointer shadow-sm group-hover:shadow-xl right-2 bg-background group-hover:bg-white transition-all rounded-full grid place-items-center w-10 h-10 "
+        >
+          <span
+            className="transition-all"
+            style={{ rotate: viewList ? "180deg" : "0deg" }}
+          >
+            <ChevronDown />
+          </span>
         </div>
       </div>
       <Dialog>

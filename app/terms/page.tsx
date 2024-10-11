@@ -26,7 +26,7 @@ const page = () => {
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto has 48-72 hours turnaround time for most design services. This is not the complete time from start to finish for a project, only the turnaround time for a single iteration of a design stage. Depending on the kind of service the time required for revisions could be a minimum of 48 hours to 72 hours, this time means 2 working days, For example:`}
+            {`Scintillapro has 48-72 hours turnaround time for most design services. This is not the complete time from start to finish for a project, only the turnaround time for a single iteration of a design stage. Depending on the kind of service the time required for revisions could be a minimum of 48 hours to 72 hours, this time means 2 working days, For example:`}
           </p>
         </Transition>
         <Transition>
@@ -46,7 +46,7 @@ const page = () => {
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left ">
-            {`Digineto offers a 100% Money Back Guarantee on all its design services. Customers can claim 100% of their money paid for the service back under the following circumstance:`}
+            {`Scintillapro offers a 100% Money Back Guarantee on all its design services. Customers can claim 100% of their money paid for the service back under the following circumstance:`}
           </p>
         </Transition>
         <Transition>
@@ -62,12 +62,12 @@ const page = () => {
 
           <Transition>
           <p className="text-sm text-toned-gray text-left ">
-            {`Digineto offers a 100% Refund on all its design services, however it is not an unconditional 100% refund and certain conditions still apply.`}
+            {`Scintillapro offers a 100% Refund on all its design services, however it is not an unconditional 100% refund and certain conditions still apply.`}
           </p>
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left ">
-            {`Digineto Refund Policy will be Void if;`}
+            {`Scintillapro Refund Policy will be Void if;`}
           </p>
         </Transition>
         <Transition>
@@ -153,7 +153,7 @@ the service will not be subject to refund under any circumstances. `}
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left ">
-            {`The refund approval will be at discretion of Digineto Management.`}
+            {`The refund approval will be at discretion of Scintillapro Management.`}
           </p>
         </Transition>
         <Transition>
@@ -175,8 +175,8 @@ any number of reasons will be subjected to a 33% cancellation administrative fee
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left ">
-            {`Note: Digineto hold all the rights to reject any project or cancel the contract whenever it
-deems necessary. After the refund, you will not have any rights to use the designs for any purpose; they will be the sole property of Digineto. The company will be the rightful owner of the designs.`}
+            {`Note: Scintillapro hold all the rights to reject any project or cancel the contract whenever it
+deems necessary. After the refund, you will not have any rights to use the designs for any purpose; they will be the sole property of Scintillapro. The company will be the rightful owner of the designs.`}
           </p>
         </Transition>
         <Transition>
@@ -232,7 +232,7 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`For services that are not covered under the 100% refund policy in case of dissatisfaction the Digineto management after review the project may choose to offer a partial refund to the client.`}
+            {`For services that are not covered under the 100% refund policy in case of dissatisfaction the Scintillapro management after review the project may choose to offer a partial refund to the client.`}
           </p>
         </Transition>
 
@@ -273,7 +273,7 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`After you have received your refund, you will not have any rights to any designs submitted by Digineto, unless mutually agreed with by the company and the customer through written communication. The information will be submitted the Copyright Acquisition of the Government Copyright Agencies to maintain legality.`}
+            {`After you have received your refund, you will not have any rights to any designs submitted by Scintillapro, unless mutually agreed with by the company and the customer through written communication. The information will be submitted the Copyright Acquisition of the Government Copyright Agencies to maintain legality.`}
           </p>
         </Transition>
         <h4 className="sm:text-h4 text-3xl text-left font-semibold my-4">
@@ -283,7 +283,7 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will do its best to meet your requirements and our designers do their best to fulfill your expectations. We believe in providing best designs and each of our designs is well researched and well crafted.`}
+            {` Scintillapro will do its best to meet your requirements and our designers do their best to fulfill your expectations. We believe in providing best designs and each of our designs is well researched and well crafted.`}
           </p>
         </Transition>
         <h4 className="sm:text-h4 text-3xl text-left font-semibold my-4">
@@ -338,12 +338,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`All finalized Designs provided by Digineto are done so on a written request of finalization by the client and upon finalization the client receives all the final core files of the logo and owns 100% of all rights of ownership to the said logo.`}
+            {`All finalized Designs provided by Scintillapro are done so on a written request of finalization by the client and upon finalization the client receives all the final core files of the logo and owns 100% of all rights of ownership to the said logo.`}
           </p>
         </Transition>        
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`• Client shall own the final the Final Design provided by Digineto in all its entirety.`}
+            {`• Client shall own the final the Final Design provided by Scintillapro in all its entirety.`}
           </p>
         </Transition>        
         <Transition>
@@ -383,12 +383,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will not be responsible for creating or populating content (e.g. text/Images) into the website, unless purchased exclusively otherwise. In which case: `}
+            {` Scintillapro will not be responsible for creating or populating content (e.g. text/Images) into the website, unless purchased exclusively otherwise. In which case: `}
           </p>
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will populate the website with content created for the client `}
+            {` Scintillapro will populate the website with content created for the client `}
           </p>
         </Transition>
         <Transition>
@@ -398,12 +398,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will populate the website with images.`}
+            {` Scintillapro will populate the website with images.`}
           </p>
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will acquire stock imagery for client from stock photo websites.`}
+            {` Scintillapro will acquire stock imagery for client from stock photo websites.`}
           </p>
         </Transition>
         <Transition>
@@ -413,12 +413,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will not be responsible in any way shape or form, for any similarities between images used on the site that may or may not resemble other websites.`}
+            {` Scintillapro will not be responsible in any way shape or form, for any similarities between images used on the site that may or may not resemble other websites.`}
           </p>
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will populate the website with products and product details.`}
+            {` Scintillapro will populate the website with products and product details.`}
           </p>
         </Transition>
         <Transition>
@@ -434,12 +434,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto, does not share the customer information with regarding their project or contact details with anyone. The client's person and project information is kept confidential at all points.`}
+            {`Scintillapro, does not share the customer information with regarding their project or contact details with anyone. The client's person and project information is kept confidential at all points.`}
           </p>
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Once the project is completed successfully. Both parties Digineto and The Client agree not to intentionally defame or otherwise disparage the other with respect to matters arising after project completion.`}
+            {`Once the project is completed successfully. Both parties Scintillapro and The Client agree not to intentionally defame or otherwise disparage the other with respect to matters arising after project completion.`}
           </p>
         </Transition>
         <Transition>
@@ -455,7 +455,7 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto keeps the records of finalized designs so that in case of any misplaced order, you will be provided the exact file.`}
+            {`Scintillapro keeps the records of finalized designs so that in case of any misplaced order, you will be provided the exact file.`}
           </p>
         </Transition>
 
@@ -477,7 +477,7 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto is primarily a design service and design consultancy provider. We will design and develop the services that the client needs. On occasions our packages and services purchased will include technical aspects to help the client with their websites and emails. Digineto will provide the client with the basic information regarding those services and the settings required to make those services works. Digineto will not be responsible for providing detailed trainings or installations of said services on the Customer's end. Such services may include but not limited to:`}
+            {`Scintillapro is primarily a design service and design consultancy provider. We will design and develop the services that the client needs. On occasions our packages and services purchased will include technical aspects to help the client with their websites and emails. Scintillapro will provide the client with the basic information regarding those services and the settings required to make those services works. Scintillapro will not be responsible for providing detailed trainings or installations of said services on the Customer's end. Such services may include but not limited to:`}
           </p>
         </Transition>    
         <Transition>
@@ -487,12 +487,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto will deploy the website for the customer on A Hosting server provided by us.`}
+            {`Scintillapro will deploy the website for the customer on A Hosting server provided by us.`}
           </p>
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Hosting Service provided by Digineto is a free service provided to the client as an added feature without any cost. It is acquired from a Third Party Service provider`}
+            {`Hosting Service provided by Scintillapro is a free service provided to the client as an added feature without any cost. It is acquired from a Third Party Service provider`}
           </p>
         </Transition>    
         <Transition>
@@ -502,12 +502,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`In the event the website is hosted on third party webserver purchased by the customer, Digineto will not be held responsible for any kind of server or hosting related issues.`}
+            {`In the event the website is hosted on third party webserver purchased by the customer, Scintillapro will not be held responsible for any kind of server or hosting related issues.`}
           </p>
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`There is no Service Level Agreement (SLA) between client and Digineto in terms of technical assistance or service outage, unless purchased separately as an ongoing maintenance service.`}
+            {`There is no Service Level Agreement (SLA) between client and Scintillapro in terms of technical assistance or service outage, unless purchased separately as an ongoing maintenance service.`}
           </p>
         </Transition>    
         <Transition>
@@ -517,12 +517,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto will provide the customer with a user manual to use the Website CMS (Content Management System).`}
+            {`Scintillapro will provide the customer with a user manual to use the Website CMS (Content Management System).`}
           </p>
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto will not be responsible for training the client in the said Website CMS (Content Management System).`}
+            {`Scintillapro will not be responsible for training the client in the said Website CMS (Content Management System).`}
           </p>
         </Transition>    
         <Transition>
@@ -532,17 +532,17 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto will be providing the customer with the necessary settings and information to install the emails on their end.`}
+            {`Scintillapro will be providing the customer with the necessary settings and information to install the emails on their end.`}
           </p>
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto will not be responsible for installing said emails onto the customer end. `}
+            {`Scintillapro will not be responsible for installing said emails onto the customer end. `}
           </p>
         </Transition>    
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Digineto will not be held responsible in any way for customer's failure to execute, install or learn the USge of above said services on their end, as the responsibilities for those lie on the customer's end.`}
+            {`Scintillapro will not be held responsible in any way for customer's failure to execute, install or learn the USge of above said services on their end, as the responsibilities for those lie on the customer's end.`}
           </p>
         </Transition>    
         <Transition>
@@ -563,12 +563,12 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {` Digineto will not be responsible for any communication done via any other platform than OctaGroup Design Services Design Utility Account or any phone numbers not provided by us or given on our official website.`}
+            {` Scintillapro will not be responsible for any communication done via any other platform than OctaGroup Design Services Design Utility Account or any phone numbers not provided by us or given on our official website.`}
           </p>
         </Transition>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Emails Sent back and forth through official emails that is “info@digineto.com“ are to be only considered forms of valid communication.`}
+            {`Emails Sent back and forth through official emails that is “info@Scintillapro.com“ are to be only considered forms of valid communication.`}
           </p>
         </Transition>
         <Transition>
@@ -665,7 +665,7 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4> 
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`YOU agree that Digineto is not liable for any correspondence from email address (es) other than the ones followed by our own domain i.e. "@ info@digineto.com" or/and any toll free number that is not mentioned on our website. Digineto should not be held responsible for any damage(s) caused by such correspondence. We only take responsibility of any communication through email address (es) under our own domain name or/and via toll free number i.e. already mentioned on Digineto Website.`}
+            {`YOU agree that Scintillapro is not liable for any correspondence from email address (es) other than the ones followed by our own domain i.e. "@ info@Scintillapro.com" or/and any toll free number that is not mentioned on our website. Scintillapro should not be held responsible for any damage(s) caused by such correspondence. We only take responsibility of any communication through email address (es) under our own domain name or/and via toll free number i.e. already mentioned on Scintillapro Website.`}
           </p>
         </Transition> 
 
@@ -677,7 +677,7 @@ not covered under our 100% money back guarantee. If such a service is acquired a
         </h4> 
         <Transition>
           <p className="text-sm text-toned-gray text-left mb-20">
-            {`At Digineto we guarantee that all of our customers' logos are made from scratch. This way you will have a logo that is tailor made for your requirements. We guarantee that your logo will be unique and impress your clientele`}
+            {`At Scintillapro we guarantee that all of our customers' logos are made from scratch. This way you will have a logo that is tailor made for your requirements. We guarantee that your logo will be unique and impress your clientele`}
           </p>
         </Transition> 
       </div>

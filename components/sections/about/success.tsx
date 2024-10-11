@@ -8,15 +8,13 @@ const Success = () => {
       <div className="container">
         <h2 className="sm:text-h2 text-3xl text-center font-semibold leading-tight lg:max-w-[53.75rem] mx-auto mb-4">
           <Transition>
-            Unlocking Digital Success through Creative Determination
+          Creativity and determination guiding you
+          to the ultimate digital success
           </Transition>
         </h2>
         <Transition>
           <p className="text-sm text-toned-gray max-w-[53.75rem] text-center mx-auto">
-            {`There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is
-n't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
-ecessary, making this the first true generator on the Internet`}
+            {`We provide comprehensive and thoughtful digital solutions for individuals and businesses that have proven effective for them. With an experienced team of professionals at your service and a high-level marketing plan, success will be knocking your door!`}
           </p>
         </Transition>
         <div className="flex justify-between items-center sm:flex-row flex-col py-9 px-10 bg-gradient-to-r to-[#21D6A2] from-[#4F60E8] lg:max-w-[53.75rem] sm:mx-auto rounded-[1.0625rem] mt-8 mx-2">

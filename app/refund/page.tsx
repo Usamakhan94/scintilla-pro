@@ -11,7 +11,7 @@ const page = () => {
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left ">
-            {`DIGINETO will continue to deliver quality services to the consumers, and in the event of a severe problem or dissatisfaction, they may request a refund under the terms and circumstances listed below. For our clients, we have created an appropriate money return policy, which is detailed below. Before submitting a claim, please read our money return policy. The following are the policy’s key points:`}
+            {`Scintillapro will continue to deliver quality services to the consumers, and in the event of a severe problem or dissatisfaction, they may request a refund under the terms and circumstances listed below. For our clients, we have created an appropriate money return policy, which is detailed below. Before submitting a claim, please read our money return policy. The following are the policy’s key points:`}
           </p>
         </Transition>
         <h4 className="sm:text-h4 text-3xl text-left font-semibold my-4">
@@ -21,7 +21,7 @@ const page = () => {
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Our first objective is to provide the delivery on time. We make certain that the work is delivered to the client by the deadline. However, there is a chance that there may be a malfunction and that delivery will be delayed once in a blue moon. If you’re having trouble with late deliveries, contact our customer service staff to talk about it. There is always a legitimate cause for a delay in order submission, but when the cause isn’t legitimate, we don’t hesitate to offer a refund. If your deadline has past and the DIGINETO has been of no value to you, we will offer you a full refund or shop credit. Please keep in mind that this should be relevant to the deadline you choose when making an order.`}
+            {`Our first objective is to provide the delivery on time. We make certain that the work is delivered to the client by the deadline. However, there is a chance that there may be a malfunction and that delivery will be delayed once in a blue moon. If you’re having trouble with late deliveries, contact our customer service staff to talk about it. There is always a legitimate cause for a delay in order submission, but when the cause isn’t legitimate, we don’t hesitate to offer a refund. If your deadline has past and the Scintillapro has been of no value to you, we will offer you a full refund or shop credit. Please keep in mind that this should be relevant to the deadline you choose when making an order.`}
           </p>
         </Transition>
         <h4 className="sm:text-h4 text-3xl text-left font-semibold my-4">
@@ -104,7 +104,7 @@ const page = () => {
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left">
-            {`Chargeback is strictly prohibited by www.digineto.com . The clients are requested to reach out to our friendly customer support team to resolve any sort of dispute. In the case of a chargeback, the client will be marked as fraudulent on our systems. Furthermore, if we suspect any individual taking wrongful advantage of our services, we reserve the right to take legal actions. `}
+            {`Chargeback is strictly prohibited by www.Scintillapro.com . The clients are requested to reach out to our friendly customer support team to resolve any sort of dispute. In the case of a chargeback, the client will be marked as fraudulent on our systems. Furthermore, if we suspect any individual taking wrongful advantage of our services, we reserve the right to take legal actions. `}
           </p>
         </Transition>
         <h4 className="sm:text-h4 text-3xl text-left font-semibold my-4">

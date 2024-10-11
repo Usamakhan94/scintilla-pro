@@ -22,13 +22,11 @@ const ContactUs = () => {
           </div>
           <div className="sm:px-10 px-4 pt-9 bg-gradient-to-t to-[#21D6A2] from-[#4F60E8] sm:mr-20 sm:mx-0 mx-2  pricing_card relative isolate sm:-translate-y-14 -translate-y-8 before:absolute before:bg-primary-dark before:w-16 sm:before:h-14 before:h-8 before:top-0 before:-right-16 sm:before:block before:hidden">
             <h4 className="text-h4 text-white font-semibold">
-              <Transition>Chat with us</Transition>
+              <Transition>Let creativity take over</Transition>
             </h4>
             <Transition>
               <p className="text-white text-sm">
-                {`Sed ut pers piciatis unde omnis iste natus error sit volu ptatem
-              accu santiu do lore mque laudantium, totam rem aperiam, eaque ipsa
-              quaeab illo i nve atae vitae dictasunt explicabo.`}
+                {`Ask us anything, we have the friendliest customer service folks`}
               </p>
             </Transition>
             <div className="flex items-center flex-wrap gap-7 mt-6 mb-4">

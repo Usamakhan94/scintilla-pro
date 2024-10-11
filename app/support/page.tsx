@@ -6,7 +6,7 @@ const page = () => {
       <div className="container">
         <h3 className="sm:text-h3 text-3xl text-left font-semibold mb-8">
           <Transition>
-            {`Welcome to Digineto Customer Support`}
+            {`Welcome to Scintillapro Customer Support`}
           </Transition>
         </h3>
         <h4 className="sm:text-h4 text-3xl text-left font-semibold my-4">
@@ -16,7 +16,7 @@ const page = () => {
         </h4>
         <Transition>
           <p className="text-sm text-toned-gray text-left ">
-            {`At Digineto, we are dedicated to ensuring your satisfaction with our services. Our customer support team is here to assist you promptly, providing the support you need to make the most out of your experience.`}
+            {`At Scintillapro, we are dedicated to ensuring your satisfaction with our services. Our customer support team is here to assist you promptly, providing the support you need to make the most out of your experience.`}
           </p>
         </Transition>
         <h3 className="sm:text-h3 text-3xl text-left font-semibold my-4">

@@ -8,7 +8,7 @@ import Image from "next/image";
 const ComboPackage = () => {
   return (
     <section
-      className=" bg-no-repeat bg-cover pt-24 sm:pb-28 pb-12"
+      className=" bg-no-repeat bg-cover pt-24 sm:pb-28 pb-12 overflow-x-hidden"
       style={{
         backgroundImage: "url(/combo-package-main.webp)",
       }}
@@ -70,6 +70,7 @@ const ComboPackage = () => {
             </Button>
             <div className="absolute -bottom-16 lg:-right-16 right-0 -z-10 pointer-events-none sm:opacity-100 opacity-35">
               <Image
+                className="animate-spin duration-10s"
                 src="/shredded-circle.svg"
                 alt="Shredded Circle"
                 width={119}
@@ -78,6 +79,7 @@ const ComboPackage = () => {
             </div>
             <div className="absolute lg:-top-16 -top-20 -left-16 -z-10 pointer-events-none sm:opacity-100 opacity-35">
               <Image
+                className="animate-spin duration-10s"
                 src="/squared-box.svg"
                 alt="Squared Box"
                 width={162}
@@ -98,45 +100,96 @@ const ComboPackage = () => {
               <Transition>
                 <li className="text-white text-sm flex items-center gap-1">
                   <CheckIcon color="#fff" />
-                  There are many variations of
+                  Unlimited Custom Logo Design Concepts
                 </li>
               </Transition>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
-              <li className="text-white text-sm flex items-center gap-1">
-                <CheckIcon color="#fff" />
-                There are many variations of
-              </li>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />6 Dedicated Designers
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />3 Pages Website
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Mobile Responsive
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Icon Design
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Business Card, Letterhead, Envelope
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  MS Word Letterhead
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />5 Stock Photos + 3 Banner Designs
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Complete W3C Certified HTML
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Complete Deployment
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Facebook Page Design
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  All Final File Formats
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  100% Satisfaction
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  100% Ownership Rights*
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Money Back Guarantee
+                </li>
+              </Transition>
+              <Transition>
+                <li className="text-white text-sm flex items-center gap-1">
+                  <CheckIcon color="#fff" />
+                  Dedicated Account Manager
+                </li>
+              </Transition>
             </ul>
             <Button variant="dark" className="" size="icon">
               Get in touch
@@ -146,6 +199,7 @@ const ComboPackage = () => {
             </Button>
             <div className="absolute lg:-top-16 -top-10 lg:right-0 lg:left-[unset] left-0 pointer-events-none sm:opacity-100 opacity-35 ">
               <Image
+                className="animate-spin duration-10s"
                 src="/dotted-box.svg"
                 alt="Floating Box"
                 width={63}
