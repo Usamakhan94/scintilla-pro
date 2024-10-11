@@ -2,14 +2,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PricingContent from "../../../app/pricing-content";
 import PriceCard from "@/components/ui/price-card";
 import Transition from "@/components/ui/text-appear";
-const OurPricing = () => {
+const OurPricing = ({ title }: { title: string }) => {
   const tabTriggers = [
+    { label: "Website Development", value: "website-design" },
     { label: "Logo Design", value: "logo-design" },
-    { label: "Website Design", value: "website-design" },
-    { label: "Digital Marketing", value: "digital-marketing" },
-    { label: "Mobile Apps", value: "mobile-apps" },
-    { label: "Video Animation", value: "video-animation" },
+    { label: "Combo", value: "combo" },
+    { label: "Ecommerce Solutions", value: "ecommerce-solutions" },
+    { label: "Animation", value: "animation" },
+    { label: "NFT Design", value: "nft-design" },
+    { label: "Illustration", value: "illustration" },
     { label: "Marketing Collateral", value: "marketing-collateral" },
+    { label: "SEO", value: "seo-services" },
+    { label: "SMM", value: "smm-services" },
+    { label: "Creative Copywriting", value: "creative-copywriting" },
   ];
 
   return (
@@ -23,9 +28,7 @@ const OurPricing = () => {
         </h2>
         <Transition>
           <p className="text-sm text-toned-gray max-w-[800px] text-center mx-auto">
-            {`There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form by injected humour
-          or randomised words which don't look even slightly believable.`}
+            {`To provide your business with customized and unique website development services at reasonable prices`}
           </p>
         </Transition>
         <Tabs defaultValue={tabTriggers[0].value} className="mt-8">
