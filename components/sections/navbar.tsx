@@ -50,19 +50,19 @@ const NavBar = () => {
               <Link href="/">
                 <Image src="/logo.svg" alt="Logo" width="220" height="60" />
               </Link>
-              {/* <Link
+              <Link
                 href="/"
-                className="bg-white shadow-2xl xl:w-[60%]  flex items-center justify-center py-3 px-4 rounded-bl-[30px] rounded-br-[30px] absolute -top-2 left-0"
+                className="bg-white shadow-2xl w-[100%]  flex items-center justify-center py-3 px-4 rounded-bl-[30px] rounded-br-[30px] absolute -top-2 left-0"
               >
                 <Image
-                  className="max-w-[200px]"
+                  className="max-w-[140px]"
                   unoptimized
                   src="/top-logo.svg"
                   alt="Logo"
                   width="260"
                   height="60"
                 />
-              </Link> */}
+              </Link>
             </div>
             <ul className="flex justify-center items-center xl:gap-8 gap-4">
               {Navlinks.map((navlink, index) => {

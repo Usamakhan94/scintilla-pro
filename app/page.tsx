@@ -10,6 +10,7 @@ import Services from "@/components/sections/home/services";
 import Testimonials from "@/components/sections/testimonials";
 import WorkTogether from "@/components/sections/work-together";
 import WorkWithUs from "@/components/sections/work-with-us";
+import PaymentMethods from "@/components/sections/home/payment-methods";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <ComboPackage />
       <FortuneCompanies />
       <WorkWithUs />
+      <PaymentMethods />
       <Testimonials />
       <ContactUs />
     </main>

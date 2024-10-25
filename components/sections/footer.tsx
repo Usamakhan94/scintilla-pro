@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaPinterestP } from "react-icons/fa6";
 
 const navLinks = [
   [
@@ -30,19 +30,22 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: <FaFacebookF />, href: "" },
-  { icon: <FaXTwitter />, href: "" },
-  { icon: <FaInstagram />, href: "" },
+  {
+    icon: <FaFacebookF />,
+    href: "https://www.facebook.com/profile.php?id=61567302922805",
+  },
+  { icon: <FaPinterestP />, href: "https://tr.pinterest.com/scintillaproai/" },
+  { icon: <FaInstagram />, href: "https://www.instagram.com/scintilla.pro/" },
 ];
 
 const Footer = () => {
   const pathName = usePathname().split("/")[1];
   return (
     <footer
-      className="relative lg:h-[550px] sm:h-[650px] h-[750px] bg-black overflow-hidden"
+      className="relative lg:h-[650px] sm:h-[800px] h-[950px] bg-black overflow-hidden"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 lg:h-[550px] sm:h-[650px] h-[750px] w-full lg:top-[calc(100vh-550px)] sm:top-[calc(100vh-650px)] top-[calc(100vh-750px)]">
+      <div className="fixed bottom-0 lg:h-[650px] sm:h-[800px] h-[950px] w-full lg:top-[calc(100vh-650px)] sm:top-[calc(100vh-800px)] top-[calc(100vh-950px)]">
         <div className="absolute top-0 left-0 -z-10 ">
           <Image
             src="/swiggler-rotated.svg"
@@ -67,7 +70,7 @@ const Footer = () => {
                 <Image
                   src="/footer-logo.svg"
                   alt="Logo"
-                  width="260"
+                  width="300"
                   height="60"
                 />
               </div>
@@ -84,6 +87,7 @@ const Footer = () => {
                       <li key={index}>
                         <Link
                           href={item.href}
+                          target="_blank"
                           className="sm:w-12 w-8 sm:h-12 h-8 p-2 rounded-full grid place-items-center bg-gradient-to-b from-[#4F60E8] to-[#21D6A2] text-white"
                         >
                           {item.icon}
@@ -157,10 +161,27 @@ const Footer = () => {
               Copyright© 2024. Scintillapro.com all right reserved
             </p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
-              <Link className="text-white sm:border-r-2 sm:border-white/50 pr-2" href="/privacy">Privacy</Link>
-              <Link className="text-white sm:border-r-2 sm:border-white/50 pr-2" href="/terms">Terms Of Use</Link>
-              <Link className="text-white sm:border-r-2 sm:border-white/50 pr-2" href="/refund">Refund</Link>
-              <Link className="text-white" href="/support">Customer Support</Link>
+              <Link
+                className="text-white sm:border-r-2 sm:border-white/50 pr-2"
+                href="/privacy"
+              >
+                Privacy
+              </Link>
+              <Link
+                className="text-white sm:border-r-2 sm:border-white/50 pr-2"
+                href="/terms"
+              >
+                Terms Of Use
+              </Link>
+              <Link
+                className="text-white sm:border-r-2 sm:border-white/50 pr-2"
+                href="/refund"
+              >
+                Refund
+              </Link>
+              <Link className="text-white" href="/support">
+                Customer Support
+              </Link>
             </div>
             <div className="flex sm:flex-row flex-col sm:items-center items-start sm:gap-14">
               <div>
@@ -182,6 +203,22 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
+          </div>
+          <div className=" border border-white/30 rounded-[0.8125rem] sm:mx-0 mx-2 mt-2 flex flex-col items-center justify-center lg:py-6 py-2 md:px-4 px-5 gap-3">
+            <p className="text-body font-medium text-white">Disclaimer:</p>
+            <p className="text-xsm text-center text-toned-gray">
+              {`Logo, portfolio, images and content are sole property of Scintillapro.
+              All third party company names, brand names, trademarks displayed
+              on this website are the property of their respective owners.
+              Furthermore, Scintillapro has no influence over the third party
+              material that is being displayed on the website. Therefore, we are
+              also not responsible for any resemblance with any other material
+              on the web. These portfolios and case studies are actual but
+              exemplary (for better understanding); the actual names, designs,
+              functionality, content and stats/facts may differ from the actual
+              projects. This is due to the strict NDA policy that Scintillapro
+              adheres to.`}
+            </p>
           </div>
         </div>
       </div>
