@@ -30,7 +30,7 @@ const ContactUs = () => {
               </p>
             </Transition>
             <div className="flex items-center flex-wrap gap-7 mt-6 mb-4">
-              <PhoneLink defaultLabel phone="548-584-687" />
+              <PhoneLink defaultLabel />
               <div className="flex items-center gap-2">
                 <span className="grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 ">
                   <CommentIcon />

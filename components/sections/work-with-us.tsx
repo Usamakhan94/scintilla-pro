@@ -37,7 +37,7 @@ const WorkWithUs = () => {
               </p>
             </Transition>
             <div className="py-8 flex flex-wrap gap-5 border-y border-[#00000052] w-fit pr-5 mt-7 relative before:absolute before:w-2 before:h-2 before:border-r before:border-[#00000052] before:border-t before:-top-[5px] before:right-0 before:rotate-45 after:absolute after:w-2 after:h-2 after:border-l after:border-[#00000052] after:border-b after:-bottom-[5px] after:left-0 after:rotate-45">
-              <PhoneLink phone="548-584-687" gradient darkText lightLabel />
+              <PhoneLink gradient darkText lightLabel />
               <div className="flex items-center gap-2">
                 <span className="grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 bg-gradient-to-b to-[#21D6A2] from-[#4F60E8]">
                   <FilledCommentIcon />

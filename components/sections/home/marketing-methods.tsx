@@ -196,10 +196,8 @@ const MarketingMethods = () => {
   return (
     <section className="sm:pt-[9.75rem] pt-[3.75rem] sm:pb-[8.125rem] pb-[2.5rem]">
       <div className="container">
-      <h5 className="sm:text-h5 text-base text-center text-primary font-semibold mb-4 sm:mx-0 mx-2">
-          <Transition>
-            {`Goal and Client-Oriented Web Designs`}
-          </Transition>
+        <h5 className="sm:text-h5 text-base text-center text-primary font-semibold mb-4 sm:mx-0 mx-2">
+          <Transition>{`Goal and Client-Oriented Web Designs`}</Transition>
         </h5>
         <h2 className="sm:text-h2 text-[24px] text-center font-semibold leading-tight max-w-2xl mx-auto mb-4">
           <Transition>Together With Focused </Transition>
@@ -296,7 +294,7 @@ attract your target audience.`}
                 <ArrowRight />
               </span>
             </Button>
-            <PhoneLink phone="548-584-687" dark darkText lightLabel multiIcon />
+            <PhoneLink dark darkText lightLabel multiIcon />
           </div>
         </div>
       </div>

@@ -21,13 +21,13 @@ const BestSolution = () => {
       <div className="container">
         <div className="grid xl:grid-cols-2 sm:px-0 px-2">
           <div className="max-w-[35.625rem]">
-          <h5 className="sm:text-h5 text-base text-start text-primary font-semibold mb-4 sm:mx-0 mx-2">
-          <Transition>
-            {`Endorse Your Business`}
-          </Transition>
-        </h5>
+            <h5 className="sm:text-h5 text-base text-start text-primary font-semibold mb-4 sm:mx-0 mx-2">
+              <Transition>{`Endorse Your Business`}</Transition>
+            </h5>
             <h2 className="xl:text-h2 sm:text-h3 text-[1.75rem] text-white font-semibold leading-tight mb-6">
-              <Transition>With Influential Client Experience-Driven Websites. </Transition>
+              <Transition>
+                With Influential Client Experience-Driven Websites.{" "}
+              </Transition>
             </h2>
             <Transition>
               <p className="text-white text-sm mb-8">
@@ -42,7 +42,7 @@ The creative team at Scintillapro knows how crucial a website presence in the di
                   <ArrowRight />
                 </span>
               </Button>
-              <PhoneLink phone="548-584-687" dark />
+              <PhoneLink dark />
             </div>
           </div>
           <div className="xl:static xl:translate-y-0 absolute top-1/2 lg:-translate-y-1/2 right-0 xl:max-w-full max-w-[50%] lg:block hidden ">

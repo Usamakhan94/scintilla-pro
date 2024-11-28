@@ -81,14 +81,7 @@ const FuelingSuccess = () => {
               </p>
             </Transition>
             <div className="flex items-center flex-wrap sm:gap-7 gap-4 sm:my-10 my-3">
-              <PhoneLink
-                phone="548-584-687"
-                dark
-                darkText
-                lightLabel
-                multiIcon
-                transparent
-              />
+              <PhoneLink dark darkText lightLabel multiIcon transparent />
               <div className="flex items-center gap-2">
                 <span className="grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 ">
                   <GrCommentIcon />

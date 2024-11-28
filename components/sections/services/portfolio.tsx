@@ -39,7 +39,7 @@ const Portfolio = ({ title }: { title: string }) => {
                 <ArrowRight />
               </span>
             </Button>
-            <PhoneLink phone="548-584-687" dark darkText lightLabel multiIcon />
+            <PhoneLink dark darkText lightLabel multiIcon />
           </div>
         </div>
       </div>
