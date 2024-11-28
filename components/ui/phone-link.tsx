@@ -3,7 +3,6 @@ import React from "react";
 import { GradientPhoneIcon, PhoneIcon } from "./icons";
 
 interface LinkAtt {
-  phone: string;
   darkText?: boolean;
   dark?: boolean;
   lightLabel?: boolean;
@@ -14,7 +13,6 @@ interface LinkAtt {
 }
 
 const PhoneLink = ({
-  phone,
   dark,
   darkText,
   lightLabel,
