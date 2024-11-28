@@ -26,7 +26,8 @@ const PhoneLink = ({
   return (
     <Link
       className="flex items-center gap-2"
-      href={`tel:+${phone.replaceAll("-", "")}`}
+      // href={`tel:+${phone.replaceAll("-", "")}`}
+      href={`tel:+14695770221`}
     >
       <span
         className={`grid place-items-center min-w-[3.125rem] h-[3.125rem] rounded-full border text-h6 ${
@@ -60,7 +61,8 @@ const PhoneLink = ({
             darkText ? "text-toned-dark" : "text-white"
           }`}
         >
-          {phone}
+          {/* {phone} */}
+          +14695770221
         </p>
       </div>
     </Link>
