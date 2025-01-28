@@ -1,61 +1,16 @@
-// "use client";
-// import { useEffect, useState } from "react";
-// import Lenis from "lenis";
-// import LoadingScreen from "@/components/sections/LoadingScreen";
-// import { usePathname } from "next/navigation";
-// import { AnimatePresence } from "framer-motion";
-
-// export default function Template({ children }: { children: React.ReactNode }) {
-//   const [loading, setLoading] = useState(false);
-//   const pathname = usePathname();
-
-//   useEffect(() => {
-//     const lenis = new Lenis();
-
-//     function raf(time: DOMHighResTimeStamp) {
-//       lenis.raf(time);
-//       requestAnimationFrame(raf);
-//     }
-
-//     requestAnimationFrame(raf);
-//   }, []);
-
-//   const Tawk_API: any = {},
-//     Tawk_LoadStart = new Date();
-
-//   (function () {
-//     const s1 = document.createElement("script");
-//     const s0: any = document.getElementsByTagName("script")[0];
-//     s1.async = true;
-//     s1.src = "https://embed.tawk.to/671c05c54304e3196ad85659/1ib2nd36v";
-//     s1.charset = "UTF-8";
-//     s1.setAttribute("crossorigin", "*");
-//     s0.parentNode.insertBefore(s1, s0);
-//   })();
-
-//   useEffect(() => {
-//     const handleStart = () => setLoading(true);
-//     setTimeout(() => {
-//       const handleComplete = () => setLoading(false);
-//       handleComplete();
-//     }, 3000);
-//     handleStart();
-//   }, [pathname]);
-
-//   return (
-//     <>
-//       {children}
-//       <AnimatePresence>{loading && <LoadingScreen />}</AnimatePresence>
-//     </>
-//   );
-// }
-
 "use client";
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import LoadingScreen from "@/components/sections/LoadingScreen";
 import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
+
+// Extend the Window interface
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
 
 export default function Template({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(false);
@@ -89,6 +44,30 @@ export default function Template({ children }: { children: React.ReactNode }) {
       s0.parentNode?.insertBefore(s1, s0);
     })();
   }, [pathname]);
+
+  // Inject Google Tag Manager script
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    // Load gtag.js
+    const gtagScript = document.createElement("script");
+    gtagScript.src =
+      "https://www.googletagmanager.com/gtag/js?id=AW-11301458978";
+    gtagScript.async = true;
+    document.head.appendChild(gtagScript);
+
+    // Initialize gtag
+    const initGtag = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: any[]) {
+        window.dataLayer.push(args);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-11301458978");
+    };
+
+    gtagScript.onload = initGtag;
+  }, []);
 
   useEffect(() => {
     const handleStart = () => setLoading(true);
