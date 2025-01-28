@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 // Extend the Window interface
 declare global {
   interface Window {
-    dataLayer: any[];
+    dataLayer: Record<string, unknown>[];
   }
 }
 
@@ -27,11 +27,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
     requestAnimationFrame(raf);
   }, []);
 
-  // Define Tawk_API as an empty object with an index signature for dynamic properties.
-  // const Tawk_API: { [key: string]: any } = {};
-
   useEffect(() => {
-    if (window === undefined) return;
+    if (typeof window === "undefined") return;
     (function () {
       const s1 = document.createElement("script");
       const s0 = document.getElementsByTagName(
@@ -45,25 +42,25 @@ export default function Template({ children }: { children: React.ReactNode }) {
     })();
   }, [pathname]);
 
-  // Inject Google Tag Manager script
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    // Load gtag.js
     const gtagScript = document.createElement("script");
     gtagScript.src =
       "https://www.googletagmanager.com/gtag/js?id=AW-11301458978";
     gtagScript.async = true;
     document.head.appendChild(gtagScript);
 
-    // Initialize gtag
     const initGtag = () => {
       window.dataLayer = window.dataLayer || [];
-      function gtag(...args: any[]) {
-        window.dataLayer.push(args);
+      function gtag(event: string, config?: Record<string, unknown>) {
+        window.dataLayer.push({
+          event,
+          ...(config || {}),
+        });
       }
-      gtag("js", new Date());
-      gtag("config", "AW-11301458978");
+      gtag("js", { timestamp: new Date().toISOString() });
+      gtag("config", { id: "AW-11301458978" });
     };
 
     gtagScript.onload = initGtag;
