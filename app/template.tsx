@@ -9,6 +9,11 @@ import { AnimatePresence } from "framer-motion";
 declare global {
   interface Window {
     dataLayer: Record<string, unknown>[];
+    gtag?: (
+      event: string,
+      actionOrConfig: string | Record<string, unknown>,
+      options?: Record<string, unknown>
+    ) => void;
   }
 }
 
@@ -53,14 +58,20 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
     const initGtag = () => {
       window.dataLayer = window.dataLayer || [];
-      function gtag(event: string, config?: Record<string, unknown>) {
-        window.dataLayer.push({
-          event,
-          ...(config || {}),
-        });
-      }
-      gtag("js", { timestamp: new Date().toISOString() });
-      gtag("config", { id: "AW-11301458978" });
+      window.gtag = (event, actionOrConfig, options?) => {
+        if (typeof actionOrConfig === "string") {
+          window.dataLayer.push({
+            event,
+            action: actionOrConfig,
+            ...(options || {}),
+          });
+        } else {
+          window.dataLayer.push({ event, ...(actionOrConfig || {}) });
+        }
+      };
+
+      window.gtag("js", { timestamp: new Date().toISOString() });
+      window.gtag("config", { id: "AW-11301458978" });
     };
 
     gtagScript.onload = initGtag;
@@ -69,10 +80,23 @@ export default function Template({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const handleStart = () => setLoading(true);
     setTimeout(() => {
-      const handleComplete = () => setLoading(false);
-      handleComplete();
+      setLoading(false);
     }, 3000);
     handleStart();
+  }, [pathname]);
+
+  // ✅ Google Ads Conversion Event Function (Integrated)
+  const gtagSendEvent = () => {
+    if (typeof window.gtag !== "function") return;
+
+    window.gtag("event", "ads_conversion_Form_1", {
+      // Optional: Add event parameters here
+    });
+  };
+
+  // ✅ Automatically trigger event on pathname change
+  useEffect(() => {
+    gtagSendEvent();
   }, [pathname]);
 
   return (
